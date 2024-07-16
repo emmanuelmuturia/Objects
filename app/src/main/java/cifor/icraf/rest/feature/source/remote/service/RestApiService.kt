@@ -7,6 +7,6 @@ import retrofit2.http.GET
 fun interface RestApiService {
 
     @GET(value = "objects")
-    fun getAllSubjects() : Response<List<RestDTO>>
+    suspend fun getAllSubjects() : Response<List<RestDTO>>
 
 }

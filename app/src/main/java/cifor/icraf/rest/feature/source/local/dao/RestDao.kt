@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 interface RestDao {
 
     @Upsert
-    suspend fun upsertRestDTO(restDTO: RestDTO)
+    suspend fun upsertRestDTO(restEntity: RestEntity)
 
     @Query(value = "SELECT * FROM RestEntity")
     fun getAllSubjects(): Flow<List<RestEntity>>

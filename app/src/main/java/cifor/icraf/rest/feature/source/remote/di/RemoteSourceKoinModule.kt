@@ -1,5 +1,6 @@
 package cifor.icraf.rest.feature.source.remote.di
 
+import cifor.icraf.rest.feature.source.remote.service.RestApiService
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
@@ -20,6 +21,10 @@ val remoteSourceKoinModule = module {
                 Json.asConverterFactory(contentType = "application/json".toMediaType())
             ).baseUrl("https://api.restful-api.dev/")
             .build()
+    }
+
+    single<RestApiService> {
+        get<Retrofit>().create(RestApiService::class.java)
     }
 
 }
