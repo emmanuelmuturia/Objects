@@ -2,6 +2,7 @@ package cifor.icraf.rest.main.application
 
 import android.app.Application
 import com.squareup.leakcanary.core.BuildConfig
+import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import timber.log.Timber
 
@@ -11,6 +12,7 @@ class RestApplication : Application() {
         super.onCreate()
         if (BuildConfig.DEBUG) Timber.plant(tree = Timber.DebugTree())
         startKoin {
+            androidContext(androidContext = applicationContext)
             modules(modules = listOf())
         }
     }
