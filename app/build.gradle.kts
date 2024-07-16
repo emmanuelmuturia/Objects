@@ -1,6 +1,8 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(notation = libs.plugins.android.application)
+    alias(notation = libs.plugins.jetbrains.kotlin.android)
+    alias(notation = libs.plugins.ksp)
+    alias(notation = libs.plugins.kotlinx.serialization)
 }
 
 android {
@@ -37,12 +39,23 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    implementation(dependencyNotation = libs.androidx.core.ktx)
+    implementation(dependencyNotation = libs.androidx.appcompat)
+    implementation(dependencyNotation = libs.material)
+
+    implementation(dependencyNotation = libs.bundles.networking)
+    implementation(dependencyNotation = libs.bundles.koin)
+    implementation(dependencyNotation = libs.room.runtime)
+    implementation(dependencyNotation = libs.splash.screen)
+    ksp(libs.room.compiler)
+    implementation(dependencyNotation = libs.timber)
+
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    debugImplementation(dependencyNotation = libs.leak.canary)
+
 }
