@@ -18,7 +18,7 @@ okHttp = "4.12.0"
 kotlinxSerialization = "1.6.3"
 timber = "5.0.1"
 kotlinCoroutines = "1.6.4"
-koinBom = "3.5.6"
+koin = "3.5.6"
 leakCanary = "2.14"
 room = "2.6.1"
 splashScreen = "1.0.1"
@@ -42,9 +42,9 @@ okHttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okHttp" }
 kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinCoroutines" }
-koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koinBom" }
-koin-core = { module = "io.insert-koin:koin-core" }
-koin-android = { module = "io.insert-koin:koin-android" }
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 leak-canary = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakCanary" }
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
@@ -52,7 +52,7 @@ splash-screen = { module = "androidx.core:core-splashscreen", version.ref = "spl
 
 [bundles]
 networking = ["retrofit", "okHttp", "kotlinx-serialization", "kotlin-coroutines"]
-koin = ["koin-bom", "koin-core", "koin-android"]
+koin = ["koin-core", "koin-android"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
