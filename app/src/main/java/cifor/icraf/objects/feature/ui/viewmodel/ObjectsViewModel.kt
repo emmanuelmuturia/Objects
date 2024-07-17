@@ -16,6 +16,10 @@ class ObjectsViewModel(
 
     val objectsUIState = MutableStateFlow(value = ObjectsUIState())
 
+    init {
+        getAllSubjects()
+    }
+
     private fun getAllSubjects() {
         objectsUIState.value = ObjectsUIState(isLoading = true)
         viewModelScope.launch {
