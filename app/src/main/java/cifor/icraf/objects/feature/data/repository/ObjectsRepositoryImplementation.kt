@@ -17,8 +17,8 @@ class ObjectsRepositoryImplementation(
             localSource.getAllObjects().map { objectEntityList ->
                 objectEntityList.map { objectEntity ->
                     Object(
-                        restId = objectEntity.objectId,
-                        restName = objectEntity.objectName
+                        objectId = objectEntity.objectId,
+                        objectName = objectEntity.objectName
                     )
                 }
             }
