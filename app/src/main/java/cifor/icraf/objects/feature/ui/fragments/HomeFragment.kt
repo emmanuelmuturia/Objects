@@ -1,4 +1,4 @@
-package cifor.icraf.objects.feature.ui.screens
+package cifor.icraf.objects.feature.ui.fragments
 
 import androidx.fragment.app.Fragment
 
