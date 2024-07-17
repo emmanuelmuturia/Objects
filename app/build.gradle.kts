@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "cifor.icraf.rest"
+    namespace = "cifor.icraf.objects"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "cifor.icraf.rest"
+        applicationId = "cifor.icraf.objects"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -45,9 +45,10 @@ dependencies {
 
     implementation(dependencyNotation = libs.bundles.networking)
     implementation(dependencyNotation = libs.bundles.koin)
+    implementation(dependencyNotation = libs.room.ktx)
     implementation(dependencyNotation = libs.room.runtime)
-    implementation(dependencyNotation = libs.splash.screen)
     ksp(libs.room.compiler)
+    implementation(dependencyNotation = libs.splash.screen)
     implementation(dependencyNotation = libs.timber)
 
     implementation(libs.androidx.activity)

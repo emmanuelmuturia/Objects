@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Rest"
+rootProject.name = "Objects"
 include(":app")
