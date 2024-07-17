@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/md_theme_surface"
+    android:clickable="true"
+    android:layout_marginBottom="7dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="21dp"
+    android:layout_marginLeft="21dp"
+    app:cardElevation="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/objectId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="21dp"
+                android:text="ID: "
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/objectIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="21dp"
+                android:textSize="21sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/objectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="21dp"
+                android:text="Name: "
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_onSurface"
+                />
+
+            <TextView
+                android:id="@+id/objectNameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="21dp"
+                android:textSize="21sp"
+                android:textStyle="normal"
+                android:textColor="@color/md_theme_onSurface"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginTop="28dp"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:textColor="@color/md_theme_onPrimary"
+            android:gravity="center"
+            android:backgroundTint="@color/md_theme_primary"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
