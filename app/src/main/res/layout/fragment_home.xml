@@ -19,7 +19,7 @@
         android:gravity="center"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Objects"
+        app:title="@string/app_name"
         app:titleTextColor="@color/md_theme_onBackground"
         />
 
