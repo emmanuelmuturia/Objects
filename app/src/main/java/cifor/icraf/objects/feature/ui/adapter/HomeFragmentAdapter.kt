@@ -2,6 +2,7 @@ package cifor.icraf.objects.feature.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.ListAdapter
@@ -12,7 +13,7 @@ import cifor.icraf.objects.feature.ui.diffutil.ObjectDiffItemCallback
 
 class HomeFragmentAdapter(
     private val onCardClicked: (String) -> Unit,
-    private val onCardButtonClicked: () -> Unit
+    private val onSubmitObjectButtonClicked: () -> Unit
 ) : ListAdapter<Object, HomeFragmentAdapter.ObjectItemViewHolder>(ObjectDiffItemCallback()) {
 
     override fun onCreateViewHolder(
@@ -23,6 +24,9 @@ class HomeFragmentAdapter(
     override fun onBindViewHolder(holder: ObjectItemViewHolder, position: Int) {
         val item = getItem(position)
         holder.bind(item = item)
+        holder.submitObjectButton.setOnClickListener {
+            onSubmitObjectButtonClicked()
+        }
     }
 
     class ObjectItemViewHolder(rootView: CardView) : RecyclerView.ViewHolder(rootView) {
@@ -30,6 +34,8 @@ class HomeFragmentAdapter(
         private val objectIdValue = rootView.findViewById<TextView>(R.id.objectIdValue)
 
         private val objectNameValue = rootView.findViewById<TextView>(R.id.objectNameValue)
+
+        val submitObjectButton: Button = rootView.findViewById(R.id.submitObjectButton)
 
         companion object {
             fun inflateFrom(viewGroup: ViewGroup): ObjectItemViewHolder {
