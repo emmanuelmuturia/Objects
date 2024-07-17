@@ -24,6 +24,11 @@ class HomeFragmentAdapter(
     override fun onBindViewHolder(holder: ObjectItemViewHolder, position: Int) {
         val item = getItem(position)
         holder.bind(item = item)
+        holder.itemView.setOnClickListener {
+            onCardClicked(
+                item.objectId
+            )
+        }
         holder.submitObjectButton.setOnClickListener {
             onSubmitObjectButtonClicked()
         }
