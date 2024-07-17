@@ -1,4 +1,4 @@
-package cifor.icraf.objects.feature.source.remote.service
+package cifor.icraf.objects.feature.source.remote.api
 
 import cifor.icraf.objects.feature.source.remote.dto.ObjectsDTO
 import cifor.icraf.objects.feature.source.remote.response.ObjectsResponse
@@ -13,6 +13,6 @@ interface ObjectsApi {
     suspend fun getAllObjects() : Response<List<ObjectsDTO>>
 
     @POST(value = "objects")
-    suspend fun putObject(@Body objectsDTO: ObjectsDTO): Response<ObjectsResponse>
+    suspend fun postObject(@Body objectsDTO: ObjectsDTO) : Response<ObjectsResponse>
 
 }

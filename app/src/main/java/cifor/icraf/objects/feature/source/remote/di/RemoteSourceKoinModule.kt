@@ -1,6 +1,6 @@
 package cifor.icraf.objects.feature.source.remote.di
 
-import cifor.icraf.objects.feature.source.remote.service.ObjectsApi
+import cifor.icraf.objects.feature.source.remote.api.ObjectsApi
 import cifor.icraf.objects.feature.source.remote.source.RemoteSource
 import cifor.icraf.objects.feature.source.remote.source.RemoteSourceImplementation
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory

@@ -9,6 +9,7 @@ import cifor.icraf.objects.feature.ui.state.ObjectsUIState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import timber.log.Timber
 
 class ObjectsViewModel(
     private val objectsRepository: ObjectsRepository

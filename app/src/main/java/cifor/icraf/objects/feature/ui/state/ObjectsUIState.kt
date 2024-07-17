@@ -1,6 +1,6 @@
 package cifor.icraf.objects.feature.ui.state
 
-import cifor.icraf.objects.feature.data.model.Object
+import cifor.icraf.objects.feature.data.models.Object
 
 data class ObjectsUIState(
     val isLoading: Boolean = false,

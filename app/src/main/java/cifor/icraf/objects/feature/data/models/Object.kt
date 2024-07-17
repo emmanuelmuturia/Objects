@@ -1,4 +1,4 @@
-package cifor.icraf.objects.feature.data.model
+package cifor.icraf.objects.feature.data.models
 
 data class Object(
     val objectId: String,

@@ -2,7 +2,9 @@ package cifor.icraf.objects.feature.source.remote.source
 
 import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.entity.ObjectsEntity
-import cifor.icraf.objects.feature.source.remote.service.ObjectsApi
+import cifor.icraf.objects.feature.source.remote.api.ObjectsApi
+import cifor.icraf.objects.feature.source.remote.dto.ObjectsDTO
+import cifor.icraf.objects.feature.source.remote.response.ObjectsResponse
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 
@@ -23,6 +25,12 @@ class RemoteSourceImplementation(
                     ))
                 }
             }
+        }
+    }
+
+    override suspend fun postObject(objectsDTO: ObjectsDTO): ObjectsResponse {
+        return withContext(context = ioDispatcher) {
+            objectsApi.postObject(objectsDTO = objectsDTO).body()!!
         }
     }
 

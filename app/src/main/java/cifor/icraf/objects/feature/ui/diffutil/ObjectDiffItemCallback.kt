@@ -1,7 +1,7 @@
 package cifor.icraf.objects.feature.ui.diffutil
 
 import androidx.recyclerview.widget.DiffUtil
-import cifor.icraf.objects.feature.data.model.Object
+import cifor.icraf.objects.feature.data.models.Object
 
 class ObjectDiffItemCallback : DiffUtil.ItemCallback<Object>() {
 
