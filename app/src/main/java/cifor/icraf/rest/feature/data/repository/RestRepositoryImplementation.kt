@@ -1,39 +1,28 @@
 package cifor.icraf.rest.feature.data.repository
 
-import cifor.icraf.rest.feature.source.local.dao.RestDao
-import cifor.icraf.rest.feature.source.local.entity.RestEntity
-import cifor.icraf.rest.feature.source.remote.service.RestApiService
+import cifor.icraf.rest.feature.data.model.Subject
+import cifor.icraf.rest.feature.source.local.source.LocalSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
 
 class RestRepositoryImplementation(
-    private val restDao: RestDao,
-    private val restApiService: RestApiService,
-    private val ioDispatcher: CoroutineDispatcher
+    private val ioDispatcher: CoroutineDispatcher,
+    private val localSource: LocalSource
 ) : RestRepository {
 
-    override suspend fun getAllSubjects(): Flow<List<RestEntity>> {
+    override suspend fun getAllSubjects(): Flow<List<Subject>> {
         return withContext(context = ioDispatcher) {
-            restDao.getAllSubjects().onEach {
-                if (it.isEmpty()) {
-                    fetchSubjects()
+            localSource.getAllSubjects().map { subjectEntityList ->
+                subjectEntityList.map { subjectEntity ->
+                    Subject(
+                        restId = subjectEntity.restId,
+                        restName = subjectEntity.restName
+                    )
                 }
             }
         }
     }
-
-    override suspend fun fetchSubjects() {
-        withContext(context = ioDispatcher) {
-            val response = restApiService.getAllSubjects()
-            if (response.isSuccessful) {
-                response.body()!!.map { restDTO ->
-                    restDao.upsertRestDTO(restEntity = restDTO.toEntity())
-                }
-            }
-        }
-    }
-
 
 }

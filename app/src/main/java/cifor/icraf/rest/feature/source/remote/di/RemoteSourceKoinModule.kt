@@ -1,6 +1,8 @@
 package cifor.icraf.rest.feature.source.remote.di
 
 import cifor.icraf.rest.feature.source.remote.service.RestApiService
+import cifor.icraf.rest.feature.source.remote.source.RemoteSource
+import cifor.icraf.rest.feature.source.remote.source.RemoteSourceImplementation
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
@@ -25,6 +27,14 @@ val remoteSourceKoinModule = module {
 
     single<RestApiService> {
         get<Retrofit>().create(RestApiService::class.java)
+    }
+
+    single<RemoteSource> {
+        RemoteSourceImplementation(
+            restDao = get(),
+            restApiService = get(),
+            ioDispatcher = get()
+        )
     }
 
 }
