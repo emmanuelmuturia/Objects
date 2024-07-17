@@ -24,6 +24,7 @@ leakCanary = "2.14"
 room = "2.6.1"
 splashScreen = "1.0.1"
 ksp = "2.0.0-1.0.21"
+navigation = "2.7.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -52,13 +53,17 @@ room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 splash-screen = { module = "androidx.core:core-splashscreen", version.ref = "splashScreen" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
 
 [bundles]
 networking = ["retrofit", "retrofit-converter", "okHttp", "kotlinx-serialization", "kotlin-coroutines"]
 koin = ["koin-core", "koin-android"]
+navigation = ["navigation-fragment", "navigation-ui"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }

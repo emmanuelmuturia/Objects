@@ -3,6 +3,7 @@ plugins {
     alias(notation = libs.plugins.jetbrains.kotlin.android)
     alias(notation = libs.plugins.ksp)
     alias(notation = libs.plugins.kotlinx.serialization)
+    alias(notation = libs.plugins.safe.args)
 }
 
 android {
@@ -55,6 +56,7 @@ dependencies {
     ksp(libs.room.compiler)
     implementation(dependencyNotation = libs.splash.screen)
     implementation(dependencyNotation = libs.timber)
+    implementation(dependencyNotation = libs.bundles.navigation)
 
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
