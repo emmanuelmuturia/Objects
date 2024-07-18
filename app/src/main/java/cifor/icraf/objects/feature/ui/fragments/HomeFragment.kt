@@ -54,6 +54,13 @@ class HomeFragment : Fragment() {
             }
         }
 
+        viewLifecycleOwner.lifecycleScope.launch {
+            objectsViewModel.objectsUIState.collect { objectsUIState ->
+                binding.homeFragmentCircularProgressBar.visibility = if (objectsUIState.isLoading) View.VISIBLE else View.GONE
+                binding.objectList.visibility = if (objectsUIState.isLoading) View.GONE else View.VISIBLE
+            }
+        }
+
         return binding.root
 
     }
