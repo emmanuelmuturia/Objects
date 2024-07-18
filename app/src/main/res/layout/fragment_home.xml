@@ -11,27 +11,39 @@
         android:id="@+id/homeFragmentToolBar"
         android:layout_width="match_parent"
         android:layout_height="49dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:background="@color/md_theme_background"
         android:elevation="7dp"
         android:gravity="center"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="@string/app_name"
-        app:titleTextColor="@color/md_theme_onBackground"
-        />
+        app:titleTextColor="@color/md_theme_onBackground" />
+
+    <ProgressBar
+        android:id="@+id/homeFragmentCircularProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/objectList"
+        app:layout_constraintEnd_toEndOf="@+id/objectList"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeFragmentToolBar"
+        app:layout_constraintVertical_bias="0.50" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/objectList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="63dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="63dp"/>
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
