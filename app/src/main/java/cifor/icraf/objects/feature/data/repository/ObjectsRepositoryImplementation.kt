@@ -14,8 +14,8 @@ class ObjectsRepositoryImplementation(
 
     override suspend fun getAllObjects(): Flow<List<Object>> {
         return withContext(context = ioDispatcher) {
-            localSource.getAllObjects().map { objectEntityList ->
-                objectEntityList.map { objectEntity ->
+            localSource.getAllObjects().map { objectEntities ->
+                objectEntities.map { objectEntity ->
                     Object(
                         objectId = objectEntity.objectId,
                         objectName = objectEntity.objectName

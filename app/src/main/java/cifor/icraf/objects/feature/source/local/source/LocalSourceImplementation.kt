@@ -16,8 +16,8 @@ class LocalSourceImplementation(
 
     override suspend fun getAllObjects(): Flow<List<ObjectsEntity>> {
         return withContext(context = ioDispatcher) {
-            objectsDao.getAllObjects().onEach {
-                if (it.isEmpty()) {
+            objectsDao.getAllObjects().onEach { objectEntities ->
+                if (objectEntities.isEmpty()) {
                     remoteSource.fetchObjects()
                 }
             }

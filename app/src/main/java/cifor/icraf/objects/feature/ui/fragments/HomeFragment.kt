@@ -60,6 +60,23 @@ class HomeFragment : Fragment() {
             objectsViewModel.objectsUIState.collect { objectsUIState ->
                 binding.homeFragmentCircularProgressBar.visibility = if (objectsUIState.isLoading) View.VISIBLE else View.GONE
                 binding.objectList.visibility = if (objectsUIState.isLoading) View.GONE else View.VISIBLE
+                binding.homeFragmentErrorMessage.visibility = if (objectsUIState.error != null) {
+                    View.VISIBLE
+                } else {
+                    View.GONE
+                }
+                binding.homeFragmentErrorMessageValue.text = objectsUIState.error
+                binding.homeFragmentErrorMessageValue.visibility = if (objectsUIState.error != null) {
+                    View.VISIBLE
+                } else {
+                    View.GONE
+                }
+            }
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            binding.homeFragmentFloatingActionButton.setOnClickListener {
+                objectsViewModel.getAllSubjects()
             }
         }
 

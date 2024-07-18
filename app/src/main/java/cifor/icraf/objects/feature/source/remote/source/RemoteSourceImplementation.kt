@@ -17,7 +17,7 @@ class RemoteSourceImplementation(
             val response = objectsApi.getAllObjects()
             if (response.isSuccessful) {
                 response.body()!!.map { objectsDTO ->
-                    objectsDao.upsertObjectDTO(objectsEntity = ObjectsEntity(
+                    objectsDao.upsertObjectEntity(objectsEntity = ObjectsEntity(
                         objectId = objectsDTO.objectId,
                         objectName = objectsDTO.objectName
                     ))

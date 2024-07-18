@@ -47,4 +47,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/homeFragmentFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/homeFragmentErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unable To Fetch Objects"
+        android:textColor="@color/md_theme_onBackground"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/objectList"
+        app:layout_constraintStart_toStartOf="@+id/objectList"
+        app:layout_constraintTop_toBottomOf="@+id/homeFragmentToolBar"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/homeFragmentErrorMessageValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_theme_onBackground"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/objectList"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/objectList"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/homeFragmentErrorMessage"
+        app:layout_constraintVertical_bias="0.257" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 interface ObjectsDao {
 
     @Upsert
-    suspend fun upsertObjectDTO(objectsEntity: ObjectsEntity)
+    suspend fun upsertObjectEntity(objectsEntity: ObjectsEntity)
 
     @Query(value = "SELECT * FROM ObjectsEntity")
     fun getAllObjects(): Flow<List<ObjectsEntity>>

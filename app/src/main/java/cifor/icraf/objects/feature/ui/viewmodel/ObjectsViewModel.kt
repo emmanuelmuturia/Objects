@@ -21,7 +21,7 @@ class ObjectsViewModel(
         getAllSubjects()
     }
 
-    private fun getAllSubjects() {
+    fun getAllSubjects() {
         objectsUIState.value = ObjectsUIState(isLoading = true)
         viewModelScope.launch {
             objectsRepository.getAllObjects().asResult().collect { result ->
