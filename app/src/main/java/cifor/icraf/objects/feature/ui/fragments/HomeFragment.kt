@@ -74,12 +74,6 @@ class HomeFragment : Fragment() {
             }
         }
 
-        viewLifecycleOwner.lifecycleScope.launch {
-            binding.homeFragmentFloatingActionButton.setOnClickListener {
-                objectsViewModel.getAllSubjects()
-            }
-        }
-
         return binding.root
 
     }
