@@ -4,12 +4,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
 import cifor.icraf.objects.commons.state.asResult
+import cifor.icraf.objects.feature.data.models.Object
 import cifor.icraf.objects.feature.data.repository.ObjectsRepository
 import cifor.icraf.objects.feature.ui.state.ObjectsUIState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import timber.log.Timber
 
 class ObjectsViewModel(
     private val objectsRepository: ObjectsRepository
@@ -40,6 +40,14 @@ class ObjectsViewModel(
                     }
 
                 }
+            }
+        }
+    }
+
+    fun postObject(myObject: Object) {
+        viewModelScope.launch {
+            objectsUIState.update {
+                it.copy(responseObject = objectsRepository.postObject(myObject = myObject))
             }
         }
     }

@@ -11,7 +11,8 @@ val dataKoinModule = module {
     single<ObjectsRepository> {
         ObjectsRepositoryImplementation(
             localSource = get(),
-            ioDispatcher = get()
+            ioDispatcher = get(),
+            remoteSource = get()
         )
     }
 

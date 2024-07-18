@@ -3,7 +3,8 @@ package cifor.icraf.objects.feature.source.local.dao
 import androidx.room.Dao
 import androidx.room.Query
 import androidx.room.Upsert
-import cifor.icraf.objects.feature.source.local.entity.ObjectsEntity
+import cifor.icraf.objects.feature.source.local.entities.ObjectsEntity
+import cifor.icraf.objects.feature.source.local.entities.ObjectsResponseEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -14,5 +15,11 @@ interface ObjectsDao {
 
     @Query(value = "SELECT * FROM ObjectsEntity")
     fun getAllObjects(): Flow<List<ObjectsEntity>>
+
+    @Upsert
+    suspend fun upsertObjectsResponseEntity(objectsResponseEntity: ObjectsResponseEntity)
+
+    @Query(value = "SELECT * FROM ObjectsResponseEntity")
+    fun getAllResponseObjects(): Flow<ObjectsResponseEntity>
 
 }

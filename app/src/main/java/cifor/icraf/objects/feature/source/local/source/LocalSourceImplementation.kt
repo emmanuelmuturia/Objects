@@ -1,7 +1,9 @@
 package cifor.icraf.objects.feature.source.local.source
 
 import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
-import cifor.icraf.objects.feature.source.local.entity.ObjectsEntity
+import cifor.icraf.objects.feature.source.local.entities.ObjectsEntity
+import cifor.icraf.objects.feature.source.local.entities.ObjectsResponseEntity
+import cifor.icraf.objects.feature.source.remote.dto.ObjectsDTO
 import cifor.icraf.objects.feature.source.remote.source.RemoteSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
