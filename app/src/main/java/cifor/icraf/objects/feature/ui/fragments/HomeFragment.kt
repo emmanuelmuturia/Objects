@@ -1,7 +1,6 @@
 package cifor.icraf.objects.feature.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +13,6 @@ import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.cancelChildren
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import timber.log.Timber
 
 class HomeFragment : Fragment() {
 
@@ -40,10 +38,7 @@ class HomeFragment : Fragment() {
         }
 
         val homeFragmentAdapter = HomeFragmentAdapter(
-            onCardClicked = {
-                // Navigate to Details Fragment...
-            },
-            onSubmitObjectButtonClicked = {
+            onSubmitObjectButtonClicked = { objectId, objectName ->
                 // POST...
             }
         )

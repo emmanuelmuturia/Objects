@@ -13,8 +13,7 @@ import cifor.icraf.objects.feature.source.local.entity.ObjectsEntity
 import cifor.icraf.objects.feature.ui.diffutil.ObjectDiffItemCallback
 
 class HomeFragmentAdapter(
-    private val onCardClicked: (String) -> Unit,
-    private val onSubmitObjectButtonClicked: () -> Unit
+    private val onSubmitObjectButtonClicked: (String, String) -> Unit
 ) : ListAdapter<Object, HomeFragmentAdapter.ObjectItemViewHolder>(ObjectDiffItemCallback()) {
 
     override fun onCreateViewHolder(
@@ -25,13 +24,11 @@ class HomeFragmentAdapter(
     override fun onBindViewHolder(holder: ObjectItemViewHolder, position: Int) {
         val item = getItem(position)
         holder.bind(item = item)
-        holder.itemView.setOnClickListener {
-            onCardClicked(
-                item.objectId
-            )
-        }
         holder.submitObjectButton.setOnClickListener {
-            onSubmitObjectButtonClicked()
+            onSubmitObjectButtonClicked(
+                item.objectId,
+                item.objectName
+            )
         }
     }
 
