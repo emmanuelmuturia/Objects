@@ -61,8 +61,15 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
+    testImplementation(dependencyNotation = libs.kotlin.coroutines.test)
+    testImplementation(dependencyNotation = libs.mockk)
+    androidTestImplementation(dependencyNotation = libs.kotlin.coroutines.test)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(dependencyNotation = libs.fragment.testing)
+    debugImplementation(dependencyNotation = libs.fragment.testing.manifest)
+    androidTestImplementation(dependencyNotation = libs.androidx.test.runner)
+    androidTestImplementation(dependencyNotation = libs.androidx.test.rules)
 
     debugImplementation(dependencyNotation = libs.leak.canary)
 
