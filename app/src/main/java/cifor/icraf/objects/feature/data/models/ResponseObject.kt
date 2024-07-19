@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ResponseObject(
-    val objectId: String = "",
-    val objectName: String = "",
-    val objectCreatedAt: String = ""
+    val objectId: String? = null,
+    val objectName: String? = null,
+    val objectCreatedAt: String? = null
 )

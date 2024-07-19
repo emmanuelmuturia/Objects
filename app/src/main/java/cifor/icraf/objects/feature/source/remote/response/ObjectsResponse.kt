@@ -7,11 +7,11 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class ObjectsResponse(
     @SerialName("createdAt")
-    val objectCreatedAt: String = "",
+    val objectCreatedAt: String? = null,
     @SerialName("data")
     val objectData: DataResponse? = null,
     @SerialName("id")
-    val objectId: String = "",
+    val objectId: String? = null,
     @SerialName("name")
-    val objectName: String = ""
+    val objectName: String? = null
 )

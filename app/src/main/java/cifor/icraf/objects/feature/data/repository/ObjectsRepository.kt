@@ -10,6 +10,6 @@ interface ObjectsRepository {
 
     suspend fun getAllObjects() : Flow<List<Object>>
 
-    suspend fun postObject(myObject: Object): ResponseObject
+    suspend fun postObject(myObject: Object): ResponseObject?
 
 }

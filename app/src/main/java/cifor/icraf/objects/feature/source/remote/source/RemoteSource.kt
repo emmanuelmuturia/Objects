@@ -8,6 +8,6 @@ interface RemoteSource {
 
     suspend fun fetchObjects()
 
-    suspend fun postObject(objectsEntity: ObjectsEntity): ObjectsResponse
+    suspend fun postObject(objectsEntity: ObjectsEntity): ObjectsResponse?
 
 }

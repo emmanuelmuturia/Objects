@@ -1,6 +1,7 @@
 package cifor.icraf.objects.feature.ui.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,8 +15,10 @@ import cifor.icraf.objects.feature.data.models.Object
 import cifor.icraf.objects.feature.ui.adapter.HomeFragmentAdapter
 import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.cancelChildren
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import timber.log.Timber
 
 class HomeFragment : Fragment() {
 
@@ -43,26 +46,12 @@ class HomeFragment : Fragment() {
         val homeFragmentAdapter = HomeFragmentAdapter(
             onSubmitObjectButtonClicked = { objectId, objectName ->
                 viewLifecycleOwner.lifecycleScope.launch {
-                    objectsViewModel.postObject(myObject = Object(
-                        objectId = objectId,
-                        objectName = objectName
+                    objectsViewModel.postObject(
+                        myObject = Object(
+                            objectId = objectId,
+                            objectName = objectName
+                        )
                     )
-                    )
-                    objectsViewModel.objectsUIState.collect { objectsUIState ->
-                        val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext())
-                        builder
-                            .setTitle("Object response")
-                            .setMessage("Object ID: ${objectsUIState.responseObject.objectId}")
-                            .setMessage("Object Name: ${objectsUIState.responseObject.objectName}")
-                            .setMessage("Object Creation Time: ${objectsUIState.responseObject.objectCreatedAt}")
-                        val dialog: AlertDialog = builder.create()
-                        dialog.show()
-                        Toast.makeText(
-                            context,
-                            "You have posted: ${objectsUIState.responseObject}",
-                            Toast.LENGTH_LONG
-                        ).show()
-                    }
                 }
             }
         )
@@ -71,24 +60,37 @@ class HomeFragment : Fragment() {
 
         viewLifecycleOwner.lifecycleScope.launch {
             objectsViewModel.objectsUIState.collect { objectsUIState ->
-                homeFragmentAdapter.submitList(objectsUIState.objects)
-            }
-        }
+                Timber.tag("HomeFragment").d(message = "UIState: $objectsUIState") // Debug line
 
-        viewLifecycleOwner.lifecycleScope.launch {
-            objectsViewModel.objectsUIState.collect { objectsUIState ->
-                binding.homeFragmentCircularProgressBar.visibility = if (objectsUIState.isLoading) View.VISIBLE else View.GONE
-                binding.objectList.visibility = if (objectsUIState.isLoading) View.GONE else View.VISIBLE
-                binding.homeFragmentErrorMessage.visibility = if (objectsUIState.error != null) {
-                    View.VISIBLE
-                } else {
-                    View.GONE
-                }
+                homeFragmentAdapter.submitList(objectsUIState.objects)
+
+                binding.homeFragmentCircularProgressBar.visibility =
+                    if (objectsUIState.isLoading) View.VISIBLE else View.GONE
+                binding.objectList.visibility =
+                    if (objectsUIState.isLoading) View.GONE else View.VISIBLE
+                binding.homeFragmentErrorMessage.visibility =
+                    if (objectsUIState.error != null) View.VISIBLE else View.GONE
                 binding.homeFragmentErrorMessageValue.text = objectsUIState.error
-                binding.homeFragmentErrorMessageValue.visibility = if (objectsUIState.error != null) {
-                    View.VISIBLE
-                } else {
-                    View.GONE
+                binding.homeFragmentErrorMessageValue.visibility =
+                    if (objectsUIState.error != null) View.VISIBLE else View.GONE
+
+                objectsUIState.responseObject?.let { responseObject ->
+                    val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext())
+                    builder.setTitle("Object response")
+                        .setMessage(
+                            """
+                    Object ID: ${responseObject.objectId}
+                    Object Name: ${responseObject.objectName}
+                    Object Creation Time: ${responseObject.objectCreatedAt}
+                    """.trimIndent()
+                        )
+                    val dialog: AlertDialog = builder.create()
+                    dialog.show()
+                    Toast.makeText(
+                        context,
+                        "You have posted: ${responseObject.objectName}",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
             }
         }
@@ -103,5 +105,4 @@ class HomeFragment : Fragment() {
         binding.objectList.adapter = null
         viewLifecycleOwner.lifecycleScope.coroutineContext.cancelChildren()
     }
-
 }

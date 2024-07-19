@@ -18,9 +18,13 @@ val remoteSourceKoinModule = module {
     }
 
     single<Retrofit> {
+        val json = Json {
+            coerceInputValues = true
+            ignoreUnknownKeys = true
+        }
         Retrofit.Builder()
             .addConverterFactory(
-                Json.asConverterFactory(contentType = "application/json".toMediaType())
+                json.asConverterFactory(contentType = "application/json".toMediaType())
             )
             .baseUrl("https://api.restful-api.dev/")
             .build()

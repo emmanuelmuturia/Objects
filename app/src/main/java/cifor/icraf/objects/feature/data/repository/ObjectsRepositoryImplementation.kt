@@ -31,18 +31,22 @@ class ObjectsRepositoryImplementation(
         }
     }
 
-    override suspend fun postObject(myObject: Object): ResponseObject {
+    override suspend fun postObject(myObject: Object): ResponseObject? {
         return withContext(context = ioDispatcher) {
-            val objectsResponse = remoteSource.postObject(objectsEntity = ObjectsEntity(
-                objectId = myObject.objectId,
-                objectName = myObject.objectName
+            val objectsResponse = remoteSource.postObject(
+                ObjectsEntity(
+                    objectId = myObject.objectId,
+                    objectName = myObject.objectName
+                )
             )
-            )
-            ResponseObject(
-                objectId = objectsResponse.objectId,
-                objectName = objectsResponse.objectName,
-                objectCreatedAt = objectsResponse.objectCreatedAt
-            )
+
+            objectsResponse?.let {
+                ResponseObject(
+                    objectId = it.objectId ?: "",
+                    objectName = it.objectName ?: "",
+                    objectCreatedAt = it.objectCreatedAt ?: ""
+                )
+            }
         }
     }
 

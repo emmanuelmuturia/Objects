@@ -1,5 +1,6 @@
 package cifor.icraf.objects.feature.source.remote.source
 
+import android.util.Log
 import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.entities.ObjectsEntity
 import cifor.icraf.objects.feature.source.local.entities.ObjectsResponseEntity
@@ -10,6 +11,7 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.withContext
+import timber.log.Timber
 
 class RemoteSourceImplementation(
     private val objectsApi: ObjectsApi,
@@ -31,9 +33,26 @@ class RemoteSourceImplementation(
         }
     }
 
-    override suspend fun postObject(objectsEntity: ObjectsEntity): ObjectsResponse {
+    override suspend fun postObject(objectsEntity: ObjectsEntity): ObjectsResponse? {
         return withContext(context = ioDispatcher) {
-            objectsApi.postObject(objectsEntity = objectsEntity).body()!!
+            val response = objectsApi.postObject(objectsEntity = objectsEntity)
+            if (response.isSuccessful) {
+                val body = response.body()
+                if (body != null) {
+                    ObjectsResponse(
+                        objectId = body.objectId ?: "",
+                        objectName = body.objectName ?: "",
+                        objectCreatedAt = body.objectCreatedAt ?: ""
+                    )
+                } else {
+                    Timber.tag("Remote Source").e(message = "Response body is null")
+                    null
+                }
+            } else {
+                Timber.tag("Remote Source")
+                    .e(message = "Response was not successful: %s", response.errorBody()?.string())
+                null
+            }
         }
     }
 

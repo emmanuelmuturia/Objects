@@ -6,6 +6,6 @@ import cifor.icraf.objects.feature.data.models.ResponseObject
 data class ObjectsUIState(
     val isLoading: Boolean = false,
     val objects: List<Object> = emptyList(),
-    val responseObject: ResponseObject = ResponseObject(),
+    val responseObject: ResponseObject? = null,
     val error: String? = null
 )
