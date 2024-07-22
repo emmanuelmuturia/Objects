@@ -1,6 +1,7 @@
 package cifor.icraf.objects.feature.ui.viewmodel
 
-import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
@@ -14,7 +15,8 @@ import kotlinx.coroutines.launch
 import timber.log.Timber
 
 class ObjectsViewModel(
-    private val objectsRepository: ObjectsRepository
+    private val objectsRepository: ObjectsRepository,
+    private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
     val objectsUIState = MutableStateFlow(value = ObjectsUIState())
