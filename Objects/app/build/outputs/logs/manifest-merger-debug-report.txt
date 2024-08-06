@@ -1,0 +1,592 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [androidx.databinding:viewbinding:8.5.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e0d13b2bc4f73edfdf65a292e5a2d316/transformed/viewbinding-8.5.1/AndroidManifest.xml:2:1-7:12
+MERGED from [io.insert-koin:koin-android:3.5.6] /Users/emmanuelmuturia/.gradle/caches/transforms-4/736d1311b205350e478e2ddab026b080/transformed/koin-android-3.5.6/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3018dbce7f02715dc7c32426cd6f0039/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c9621095a619945a51983262057ffbef/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cc91baa1cf55bdd79ce6b324c33a73b6/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5a0d0393d3c60c76a046857ed5c6abb0/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1ef29570052fd6f0d19468f4863c5e9a/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8208ce494bc5a2ea6129c3fd1543b2b0/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f788de0df45c212ea248f8dc919a29f3/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f07c6e4aaae1da479df1065fd5dd1715/transformed/navigation-ui-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.12.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5c07b36bd3e7c5525af237f3b8c0e9e7/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/emmanuelmuturia/.gradle/caches/transforms-4/0aa14c5bc6612a81567c02bd9166dd22/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6b171793342fee0ef4a92b09feec612c/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8bb111b0edb629991f38812a5aaacc2f/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e3019a7a4c43aed51e5bcef3a3e82ca0/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/36024be73e1626818aac079d01114f8f/transformed/fragment-1.8.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment-ktx:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/a28b8b53e56dee383790f876e853e3fd/transformed/fragment-ktx-1.8.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:17:1-38:12
+MERGED from [com.squareup.leakcanary:leakcanary-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/041cabd71d51463a95def987817a2990/transformed/leakcanary-android-2.14/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.9.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/608635a7ad4b43ed227c3307e028c8d3/transformed/activity-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/785792c9a46df8d75e432780b5596fc3/transformed/activity-1.9.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e97c8552b396055e21a8893f2fd37546/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/08a65843f6656981662fea21b2af780c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3f2d5d828f35894de3ca659299dd6bd6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/375e95edf25b46ddff195601e332dc34/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/357bea24f90547e2e928318b429f23f0/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c2c4b4102397f46d6aa79cac29b89a3e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6aed63deb183537d106f8355c223e43a/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c8e2b1ed6b25896a3bad8a108a849ff3/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/aaec12ecc42f786ebe77965fb43b8103/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/fa91f3680ba0a767bbb375e49ab5e332/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/981beffd9f38f7d6879a47e1da995288/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/87712fac193217b730452d118e510981/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d0647f9b76df923f6c6014157245c010/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/231acea46054a23f9284bd170c72458c/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/570a62cdda6415f3bfa07b00f32c25ee/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/06a6f65b961b49e6353997cd57de0f52/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1a37dfb86b84ff45ec22ec77485dfd56/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8ec9c86ba996999e884c55e9991a5b44/transformed/lifecycle-livedata-core-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3e5f846cfdabb57996d8f2a4d4e3d3f2/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b73310e5a5a35dfe9792630b971b8dcb/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/736ef06bc3530eba969acc07c0352d3e/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/4856eaa11b7008b1e7d15b6f0657ddab/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/75f8b448cd0ecdb283e38f238f82aeda/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ba762436f2a1de60b1f03d89c7aa4750/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/a6bfe828a2d28396cc3d45d45d663a70/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1015bfa75e5e6010681e7b24afb8b9c6/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/62168409c7c2d5987bcad71abeda7f45/transformed/timber-5.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:17:1-105:12
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:2:1-15:12
+MERGED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:2:1-15:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cc3fc606a604c78c3205e3372f67bbdb/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1bb335e21c6dbba6e19f8977c92ac353/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-androidx:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6a76ebf08eae717d22f659f9992a97cf/transformed/leakcanary-object-watcher-android-androidx-2.14/AndroidManifest.xml:2:1-7:12
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-support-fragments:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3984590fba2e1f777c4e7fcb468acdb6/transformed/leakcanary-object-watcher-android-support-fragments-2.14/AndroidManifest.xml:2:1-7:12
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5d6272ab880b1d759f353f7546893b84/transformed/leakcanary-object-watcher-android-core-2.14/AndroidManifest.xml:2:1-7:12
+MERGED from [com.squareup.leakcanary:plumber-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/613e86f6bc992013fba3583328548f3b/transformed/plumber-android-core-2.14/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e30e30e43c5869d6526828554cf12494/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.squareup.leakcanary:leakcanary-android-utils:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b3bbc78acf57cb18d624e92f01dbb2e8/transformed/leakcanary-android-utils-2.14/AndroidManifest.xml:2:1-7:12
+MERGED from [com.squareup.curtains:curtains:1.2.4] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f5d3de5a7b2ed5c2e7e24bc1afc6ccfa/transformed/curtains-1.2.4/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3529eef6c053b410e6afda0e1b97ae27/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/147073d2efca89f330146fe04854c953/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/298197c3905786bc7f9cfaa9db210513/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1235472cd6d247f5e5beaeda4e31df75/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/dda9841de3e2888fd04d61a623f1e9b7/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/9b0725a452e3dfb5292f644688b31a4f/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/fd4488156c13e348fe1774d7ec75bb3c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/43a11f2162a5eee4ae98c12b2a685103/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b1bfccdd48e198f8c50dcd0e0e15178f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/40c15c44616db152dd73c1ee4a1c02ea/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:7:5-28:19
+INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:7:5-28:19
+MERGED from [io.insert-koin:koin-android:3.5.6] /Users/emmanuelmuturia/.gradle/caches/transforms-4/736d1311b205350e478e2ddab026b080/transformed/koin-android-3.5.6/AndroidManifest.xml:7:5-20
+MERGED from [io.insert-koin:koin-android:3.5.6] /Users/emmanuelmuturia/.gradle/caches/transforms-4/736d1311b205350e478e2ddab026b080/transformed/koin-android-3.5.6/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.material:material:1.12.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5c07b36bd3e7c5525af237f3b8c0e9e7/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5c07b36bd3e7c5525af237f3b8c0e9e7/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/emmanuelmuturia/.gradle/caches/transforms-4/0aa14c5bc6612a81567c02bd9166dd22/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/emmanuelmuturia/.gradle/caches/transforms-4/0aa14c5bc6612a81567c02bd9166dd22/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/62168409c7c2d5987bcad71abeda7f45/transformed/timber-5.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/62168409c7c2d5987bcad71abeda7f45/transformed/timber-5.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:31:5-103:19
+MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:31:5-103:19
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:7:5-13:19
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:7:5-13:19
+MERGED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:7:5-13:19
+MERGED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:7:5-13:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1235472cd6d247f5e5beaeda4e31df75/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1235472cd6d247f5e5beaeda4e31df75/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/fd4488156c13e348fe1774d7ec75bb3c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/fd4488156c13e348fe1774d7ec75bb3c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:13:9-41
+	android:fullBackupContent
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:11:9-54
+	android:roundIcon
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:14:9-54
+	tools:targetApi
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:17:9-29
+	android:icon
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:16:9-40
+	android:dataExtractionRules
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:10:9-65
+	android:name
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:8:9-60
+activity#cifor.icraf.objects.main.activity.MainActivity
+ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:18:9-27:20
+	android:exported
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:20:13-36
+	android:name
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:19:13-55
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:27-74
+nav-graph
+ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:26:13-63
+CONVERTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:26:13-63
+	android:value
+		ADDED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:26:24-61
+uses-sdk
+INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml
+INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.5.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e0d13b2bc4f73edfdf65a292e5a2d316/transformed/viewbinding-8.5.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.5.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e0d13b2bc4f73edfdf65a292e5a2d316/transformed/viewbinding-8.5.1/AndroidManifest.xml:5:5-44
+MERGED from [io.insert-koin:koin-android:3.5.6] /Users/emmanuelmuturia/.gradle/caches/transforms-4/736d1311b205350e478e2ddab026b080/transformed/koin-android-3.5.6/AndroidManifest.xml:5:5-44
+MERGED from [io.insert-koin:koin-android:3.5.6] /Users/emmanuelmuturia/.gradle/caches/transforms-4/736d1311b205350e478e2ddab026b080/transformed/koin-android-3.5.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3018dbce7f02715dc7c32426cd6f0039/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3018dbce7f02715dc7c32426cd6f0039/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c9621095a619945a51983262057ffbef/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c9621095a619945a51983262057ffbef/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cc91baa1cf55bdd79ce6b324c33a73b6/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cc91baa1cf55bdd79ce6b324c33a73b6/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5a0d0393d3c60c76a046857ed5c6abb0/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5a0d0393d3c60c76a046857ed5c6abb0/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1ef29570052fd6f0d19468f4863c5e9a/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1ef29570052fd6f0d19468f4863c5e9a/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8208ce494bc5a2ea6129c3fd1543b2b0/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8208ce494bc5a2ea6129c3fd1543b2b0/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f788de0df45c212ea248f8dc919a29f3/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f788de0df45c212ea248f8dc919a29f3/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f07c6e4aaae1da479df1065fd5dd1715/transformed/navigation-ui-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f07c6e4aaae1da479df1065fd5dd1715/transformed/navigation-ui-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5c07b36bd3e7c5525af237f3b8c0e9e7/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5c07b36bd3e7c5525af237f3b8c0e9e7/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/emmanuelmuturia/.gradle/caches/transforms-4/0aa14c5bc6612a81567c02bd9166dd22/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/emmanuelmuturia/.gradle/caches/transforms-4/0aa14c5bc6612a81567c02bd9166dd22/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6b171793342fee0ef4a92b09feec612c/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6b171793342fee0ef4a92b09feec612c/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8bb111b0edb629991f38812a5aaacc2f/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8bb111b0edb629991f38812a5aaacc2f/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e3019a7a4c43aed51e5bcef3a3e82ca0/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e3019a7a4c43aed51e5bcef3a3e82ca0/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/36024be73e1626818aac079d01114f8f/transformed/fragment-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/36024be73e1626818aac079d01114f8f/transformed/fragment-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/a28b8b53e56dee383790f876e853e3fd/transformed/fragment-ktx-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/a28b8b53e56dee383790f876e853e3fd/transformed/fragment-ktx-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:21:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/041cabd71d51463a95def987817a2990/transformed/leakcanary-android-2.14/AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/041cabd71d51463a95def987817a2990/transformed/leakcanary-android-2.14/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/608635a7ad4b43ed227c3307e028c8d3/transformed/activity-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/608635a7ad4b43ed227c3307e028c8d3/transformed/activity-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/785792c9a46df8d75e432780b5596fc3/transformed/activity-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/785792c9a46df8d75e432780b5596fc3/transformed/activity-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e97c8552b396055e21a8893f2fd37546/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e97c8552b396055e21a8893f2fd37546/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/08a65843f6656981662fea21b2af780c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/08a65843f6656981662fea21b2af780c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3f2d5d828f35894de3ca659299dd6bd6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3f2d5d828f35894de3ca659299dd6bd6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/375e95edf25b46ddff195601e332dc34/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/375e95edf25b46ddff195601e332dc34/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/357bea24f90547e2e928318b429f23f0/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/357bea24f90547e2e928318b429f23f0/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c2c4b4102397f46d6aa79cac29b89a3e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c2c4b4102397f46d6aa79cac29b89a3e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6aed63deb183537d106f8355c223e43a/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6aed63deb183537d106f8355c223e43a/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c8e2b1ed6b25896a3bad8a108a849ff3/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c8e2b1ed6b25896a3bad8a108a849ff3/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/aaec12ecc42f786ebe77965fb43b8103/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/aaec12ecc42f786ebe77965fb43b8103/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/fa91f3680ba0a767bbb375e49ab5e332/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/fa91f3680ba0a767bbb375e49ab5e332/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/981beffd9f38f7d6879a47e1da995288/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/981beffd9f38f7d6879a47e1da995288/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/87712fac193217b730452d118e510981/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/87712fac193217b730452d118e510981/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d0647f9b76df923f6c6014157245c010/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d0647f9b76df923f6c6014157245c010/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/231acea46054a23f9284bd170c72458c/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/231acea46054a23f9284bd170c72458c/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/570a62cdda6415f3bfa07b00f32c25ee/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/570a62cdda6415f3bfa07b00f32c25ee/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/06a6f65b961b49e6353997cd57de0f52/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/06a6f65b961b49e6353997cd57de0f52/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1a37dfb86b84ff45ec22ec77485dfd56/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1a37dfb86b84ff45ec22ec77485dfd56/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8ec9c86ba996999e884c55e9991a5b44/transformed/lifecycle-livedata-core-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/8ec9c86ba996999e884c55e9991a5b44/transformed/lifecycle-livedata-core-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3e5f846cfdabb57996d8f2a4d4e3d3f2/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3e5f846cfdabb57996d8f2a4d4e3d3f2/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b73310e5a5a35dfe9792630b971b8dcb/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b73310e5a5a35dfe9792630b971b8dcb/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/736ef06bc3530eba969acc07c0352d3e/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/736ef06bc3530eba969acc07c0352d3e/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/4856eaa11b7008b1e7d15b6f0657ddab/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/4856eaa11b7008b1e7d15b6f0657ddab/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/75f8b448cd0ecdb283e38f238f82aeda/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/75f8b448cd0ecdb283e38f238f82aeda/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ba762436f2a1de60b1f03d89c7aa4750/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ba762436f2a1de60b1f03d89c7aa4750/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/a6bfe828a2d28396cc3d45d45d663a70/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/a6bfe828a2d28396cc3d45d45d663a70/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1015bfa75e5e6010681e7b24afb8b9c6/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1015bfa75e5e6010681e7b24afb8b9c6/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/62168409c7c2d5987bcad71abeda7f45/transformed/timber-5.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/62168409c7c2d5987bcad71abeda7f45/transformed/timber-5.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cc3fc606a604c78c3205e3372f67bbdb/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cc3fc606a604c78c3205e3372f67bbdb/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1bb335e21c6dbba6e19f8977c92ac353/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1bb335e21c6dbba6e19f8977c92ac353/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-androidx:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6a76ebf08eae717d22f659f9992a97cf/transformed/leakcanary-object-watcher-android-androidx-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-androidx:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/6a76ebf08eae717d22f659f9992a97cf/transformed/leakcanary-object-watcher-android-androidx-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-support-fragments:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3984590fba2e1f777c4e7fcb468acdb6/transformed/leakcanary-object-watcher-android-support-fragments-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-support-fragments:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3984590fba2e1f777c4e7fcb468acdb6/transformed/leakcanary-object-watcher-android-support-fragments-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5d6272ab880b1d759f353f7546893b84/transformed/leakcanary-object-watcher-android-core-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/5d6272ab880b1d759f353f7546893b84/transformed/leakcanary-object-watcher-android-core-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:plumber-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/613e86f6bc992013fba3583328548f3b/transformed/plumber-android-core-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:plumber-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/613e86f6bc992013fba3583328548f3b/transformed/plumber-android-core-2.14/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e30e30e43c5869d6526828554cf12494/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/e30e30e43c5869d6526828554cf12494/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-android-utils:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b3bbc78acf57cb18d624e92f01dbb2e8/transformed/leakcanary-android-utils-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-android-utils:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b3bbc78acf57cb18d624e92f01dbb2e8/transformed/leakcanary-android-utils-2.14/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.curtains:curtains:1.2.4] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f5d3de5a7b2ed5c2e7e24bc1afc6ccfa/transformed/curtains-1.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.squareup.curtains:curtains:1.2.4] /Users/emmanuelmuturia/.gradle/caches/transforms-4/f5d3de5a7b2ed5c2e7e24bc1afc6ccfa/transformed/curtains-1.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3529eef6c053b410e6afda0e1b97ae27/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/3529eef6c053b410e6afda0e1b97ae27/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/147073d2efca89f330146fe04854c953/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/147073d2efca89f330146fe04854c953/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/298197c3905786bc7f9cfaa9db210513/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/298197c3905786bc7f9cfaa9db210513/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1235472cd6d247f5e5beaeda4e31df75/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1235472cd6d247f5e5beaeda4e31df75/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/dda9841de3e2888fd04d61a623f1e9b7/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/dda9841de3e2888fd04d61a623f1e9b7/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/9b0725a452e3dfb5292f644688b31a4f/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/9b0725a452e3dfb5292f644688b31a4f/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/fd4488156c13e348fe1774d7ec75bb3c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/fd4488156c13e348fe1774d7ec75bb3c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/43a11f2162a5eee4ae98c12b2a685103/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/43a11f2162a5eee4ae98c12b2a685103/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b1bfccdd48e198f8c50dcd0e0e15178f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/b1bfccdd48e198f8c50dcd0e0e15178f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/40c15c44616db152dd73c1ee4a1c02ea/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/40c15c44616db152dd73c1ee4a1c02ea/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.REORDER_TASKS
+ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:23:5-72
+	android:name
+		ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:23:22-69
+activity#androidx.fragment.app.testing.EmptyFragmentActivity
+ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:26:9-35:20
+	android:multiprocess
+		ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:28:13-36
+	android:theme
+		ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:31:13-78
+	android:taskAffinity
+		ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:27:13-79
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from [androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:32:13-34:29
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1235472cd6d247f5e5beaeda4e31df75/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/1235472cd6d247f5e5beaeda4e31df75/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#cifor.icraf.objects.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#cifor.icraf.objects.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:25:5-80
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:25:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:26:22-78
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:29:5-77
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:29:22-74
+provider#leakcanary.internal.LeakCanaryFileProvider
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:32:9-40:20
+	android:grantUriPermissions
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:36:13-47
+	android:authorities
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:34:13-88
+	android:exported
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:33:13-70
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:37:13-39:66
+	android:resource
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:39:17-63
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:38:17-67
+activity#leakcanary.internal.activity.LeakActivity
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:42:9-73:20
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:46:13-71
+	android:exported
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:44:13-36
+	android:icon
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:45:13-52
+	android:theme
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:48:13-63
+	android:taskAffinity
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:47:13-76
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:43:13-69
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:*+data:mimeType:*/*+data:pathPattern:.*\\..*\\..*\\..*\\..*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\..*\\..*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\..*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\.hprof+data:pathPattern:.*\\.hprof+data:scheme:content+data:scheme:file
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:49:13-72:29
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:49:28-81
+action#android.intent.action.VIEW
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:50:17-69
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:50:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:52:17-76
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:52:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:53:17-78
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:53:27-75
+data
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
+	android:scheme
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:23-44
+activity-alias#leakcanary.internal.activity.LeakLauncherActivity
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:75:9-92:26
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:78:13-66
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:81:13-71
+	android:exported
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:79:13-36
+	android:targetActivity
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:82:13-79
+	android:icon
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:80:13-52
+	android:banner
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:77:13-59
+	android:theme
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:84:13-63
+	android:taskAffinity
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:83:13-76
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:76:13-77
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:85:13-91:29
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:90:17-86
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:90:27-83
+activity#leakcanary.internal.RequestPermissionActivity
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:94:9-100:68
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:98:13-82
+	android:excludeFromRecents
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:96:13-46
+	android:icon
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:97:13-52
+	android:theme
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:100:13-65
+	android:taskAffinity
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:99:13-76
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:95:13-73
+receiver#leakcanary.internal.NotificationReceiver
+ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:102:9-77
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:102:19-74
+provider#leakcanary.internal.MainProcessAppWatcherInstaller
+ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:8:9-12:40
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:11:13-69
+	android:authorities
+		ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:9:13-78
+provider#leakcanary.internal.PlumberInstaller
+ADDED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:8:9-12:40
+	android:enabled
+		ADDED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:11:13-69
+	android:authorities
+		ADDED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:10:13-69
+	android:exported
+		ADDED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:9:13-64
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

@@ -1,9 +1,9 @@
 package cifor.icraf.objects.feature.source.remote.source
 
 import android.util.Log
-import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
-import cifor.icraf.objects.feature.source.local.entities.ObjectsEntity
-import cifor.icraf.objects.feature.source.local.entities.ObjectsResponseEntity
+import cifor.icraf.objects.feature.source.local.room.dao.ObjectsDao
+import cifor.icraf.objects.feature.source.local.room.entities.ObjectsEntity
+import cifor.icraf.objects.feature.source.local.room.entities.ObjectsResponseEntity
 import cifor.icraf.objects.feature.source.remote.api.ObjectsApi
 import cifor.icraf.objects.feature.source.remote.dto.ObjectsDTO
 import cifor.icraf.objects.feature.source.remote.response.ObjectsResponse
@@ -27,7 +27,8 @@ class RemoteSourceImplementation(
                     objectsDao.upsertObjectEntity(objectsEntity = ObjectsEntity(
                         objectId = objectsDTO.objectId,
                         objectName = objectsDTO.objectName
-                    ))
+                    )
+                    )
                 }
             }
         }
