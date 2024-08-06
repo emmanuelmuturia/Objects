@@ -5,11 +5,11 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class ObjectsDTO(
-    @SerialName("data")
-    val data: Data? = null,
+data class County(
+    @SerialName("county_name")
+    val countyName: String,
     @SerialName("id")
-    val objectId: String,
-    @SerialName("name")
-    val objectName: String
+    val countyId: Int,
+    @SerialName("subCounties")
+    val countySubCounties: List<SubCounty>
 )

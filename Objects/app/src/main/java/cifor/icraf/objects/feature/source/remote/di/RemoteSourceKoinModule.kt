@@ -26,7 +26,7 @@ val remoteSourceKoinModule = module {
             .addConverterFactory(
                 json.asConverterFactory(contentType = "application/json".toMediaType())
             )
-            .baseUrl("https://api.restful-api.dev/")
+            // .baseUrl("https://api.restful-api.dev/") Insert the Base URL of Muhammad's REST API...
             .build()
     }
 

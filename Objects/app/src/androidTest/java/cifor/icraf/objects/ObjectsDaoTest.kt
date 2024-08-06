@@ -5,7 +5,6 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import cifor.icraf.objects.feature.source.local.room.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.room.database.ObjectsDatabase
-import cifor.icraf.objects.feature.source.local.room.entities.ObjectsEntity
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.After
