@@ -1,6 +1,15 @@
 package cifor.icraf.objects.feature.data.models
 
+import cifor.icraf.objects.feature.source.local.room.entities.SubCountyEntity
+
 data class SubCounty(
-    val id: Int,
-    val subcountyName: String
-)
+    val subCountyId: Int,
+    val subCountyName: String
+) {
+    fun toSubCountyEntity(): SubCountyEntity {
+        return SubCountyEntity(
+            subCountyId = subCountyId,
+            subCountyName = subCountyName
+        )
+    }
+}
