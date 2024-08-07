@@ -17,36 +17,6 @@ class ObjectsRepositoryImplementation(
     private val remoteSource: RemoteSource
 ) : ObjectsRepository {
 
-    override suspend fun getAllObjects(): Flow<List<Object>> {
-        return withContext(context = ioDispatcher) {
-            localSource.getAllObjects().map { objectEntities ->
-                objectEntities.map { objectEntity ->
-                    Object(
-                        objectId = objectEntity.objectId,
-                        objectName = objectEntity.objectName
-                    )
-                }
-            }
-        }
-    }
 
-    override suspend fun postObject(myObject: Object): ResponseObject? {
-        return withContext(context = ioDispatcher) {
-            val objectsResponse = remoteSource.postObject(
-                ObjectsEntity(
-                    objectId = myObject.objectId,
-                    objectName = myObject.objectName
-                )
-            )
-
-            objectsResponse?.let {
-                ResponseObject(
-                    objectId = it.objectId ?: "",
-                    objectName = it.objectName ?: "",
-                    objectCreatedAt = it.objectCreatedAt ?: ""
-                )
-            }
-        }
-    }
 
 }
