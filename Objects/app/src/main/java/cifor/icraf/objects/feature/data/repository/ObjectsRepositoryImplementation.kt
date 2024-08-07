@@ -1,6 +1,8 @@
 package cifor.icraf.objects.feature.data.repository
 
 import cifor.icraf.objects.feature.data.models.Country
+import cifor.icraf.objects.feature.data.models.toCounty
+import cifor.icraf.objects.feature.data.models.toCountyEntity
 import cifor.icraf.objects.feature.source.local.room.entities.CountryEntity
 import cifor.icraf.objects.feature.source.local.room.source.LocalSource
 import kotlinx.coroutines.CoroutineDispatcher
@@ -22,7 +24,7 @@ class ObjectsRepositoryImplementation(
                         countryName = countryEntity.countryName,
                         countryCurrency = countryEntity.countryCurrency,
                         countryCode = countryEntity.countryCode,
-                        countryCounties = countryEntity.countryCounties,
+                        countryCounties = countryEntity.countryCounties.map { it.toCounty() },
                         countryPhoneCode = countryEntity.countryPhoneCode
                     )
                 }

@@ -8,7 +8,6 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import cifor.icraf.objects.R
-import cifor.icraf.objects.feature.data.models.Object
 import cifor.icraf.objects.feature.ui.diffutil.ObjectDiffItemCallback
 
 class HomeFragmentAdapter(

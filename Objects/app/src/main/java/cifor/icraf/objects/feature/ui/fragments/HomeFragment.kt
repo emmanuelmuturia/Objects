@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import cifor.icraf.objects.databinding.FragmentHomeBinding
-import cifor.icraf.objects.feature.data.models.Object
 import cifor.icraf.objects.feature.ui.adapter.HomeFragmentAdapter
 import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.cancelChildren

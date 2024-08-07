@@ -1,6 +1,5 @@
 package cifor.icraf.objects
 
-import cifor.icraf.objects.feature.data.models.Object
 import cifor.icraf.objects.feature.data.repository.ObjectsRepository
 import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import io.mockk.coEvery

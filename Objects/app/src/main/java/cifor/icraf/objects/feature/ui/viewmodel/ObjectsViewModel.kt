@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
 import cifor.icraf.objects.commons.state.asResult
-import cifor.icraf.objects.feature.data.models.Object
 import cifor.icraf.objects.feature.data.repository.ObjectsRepository
 import cifor.icraf.objects.feature.ui.state.ObjectsUIState
 import kotlinx.coroutines.flow.MutableStateFlow
