@@ -14,12 +14,16 @@ class LocalSourceImplementation(
     private val remoteSource: RemoteSource
 ) : LocalSource {
 
-    override fun getAllCountries(): Flow<List<CountryEntity>> {
-        TODO("Not yet implemented")
+    override suspend fun getAllCountries(): Flow<List<CountryEntity>> {
+        return withContext(context = ioDispatcher) {
+            objectsDao.getAllCountries()
+        }
     }
 
     override suspend fun upsertCountry(countryEntity: CountryEntity) {
-        TODO("Not yet implemented")
+        withContext(context = ioDispatcher) {
+            objectsDao.upsertCountryEntity(countryEntity = countryEntity)
+        }
     }
 
 }

@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface LocalSource {
 
-    fun getAllCountries(): Flow<List<CountryEntity>>
+    suspend fun getAllCountries(): Flow<List<CountryEntity>>
 
     suspend fun upsertCountry(countryEntity: CountryEntity)
 
