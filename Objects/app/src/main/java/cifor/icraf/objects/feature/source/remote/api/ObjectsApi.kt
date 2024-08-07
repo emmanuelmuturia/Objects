@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface ObjectsApi {
 
-   @GET
-   suspend fun getAllCountries(): Response<List<CountryDTO>>
+   @GET(value = "")
+   suspend fun fetchAllCountries(): Response<List<CountryDTO>>
 
 }

@@ -5,78 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce5c7c9d-d27b-45c9-9b72-3aceafcd2e16" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/androidTest/java/cifor/icraf/objects/HomeFragmentTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/androidTest/java/cifor/icraf/objects/ObjectsDaoTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/commons/state/NetworkResult.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/data/di/DataKoinModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/data/models/Object.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/data/models/ResponseObject.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/data/repository/ObjectsRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/data/repository/ObjectsRepositoryImplementation.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/local/dao/ObjectsDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/local/database/ObjectsDatabase.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/local/di/LocalSourceKoinModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/local/entities/ObjectsEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/local/entities/ObjectsResponseEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/local/source/LocalSource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/local/source/LocalSourceImplementation.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/remote/api/ObjectsApi.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/remote/di/RemoteSourceKoinModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/remote/dto/Data.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/remote/dto/ObjectsDTO.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/remote/response/DataResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/remote/response/ObjectsResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/remote/source/RemoteSource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/source/remote/source/RemoteSourceImplementation.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/ui/adapter/HomeFragmentAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/ui/di/UIKoinModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/ui/diffutil/ObjectDiffItemCallback.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/ui/fragments/HomeFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/ui/state/ObjectsUIState.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/feature/ui/viewmodel/ObjectsViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/main/activity/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/cifor/icraf/objects/main/application/ObjectsApplication.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/object_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values-night/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values-night/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values-night/theme_overlays.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/theme_overlays.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/test/java/cifor/icraf/objects/ObjectsViewModelTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +59,37 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;emmanuelmuturia&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:emmanuelmuturia/RestXML.git&quot;,
+    &quot;accountId&quot;: &quot;5f8cb0ea-3da8-4452-aded-51fc5b0ccdd4&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2jdfw3CUYdjcnWyHq7ujyNja31M" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
