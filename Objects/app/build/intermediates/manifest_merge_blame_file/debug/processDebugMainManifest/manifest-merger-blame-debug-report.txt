@@ -57,288 +57,287 @@
 33-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:14:9-54
 34        android:supportsRtl="true"
 34-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:15:9-35
-35        android:testOnly="true"
-36        android:theme="@style/AppTheme" >
-36-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:16:9-40
-37        <activity
-37-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:18:9-27:20
-38            android:name="cifor.icraf.objects.main.activity.MainActivity"
-38-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:19:13-55
-39            android:exported="true" >
-39-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:20:13-36
-40            <intent-filter>
-40-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:21:13-25:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:17-69
-41-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:17-77
-43-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity
-46-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:26:9-35:20
-47            android:name="androidx.fragment.app.testing.EmptyFragmentActivity"
-47-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:27:13-79
-48            android:exported="true"
-48-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:28:13-36
-49            android:multiprocess="true"
-49-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:29:13-40
-50            android:taskAffinity=""
-50-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:30:13-36
-51            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" >
-51-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:31:13-78
-52            <intent-filter>
-52-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:32:13-34:29
-53                <action android:name="android.intent.action.MAIN" />
-53-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:17-69
-53-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:25-66
-54            </intent-filter>
-55        </activity>
-56
-57        <provider
-57-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-58            android:name="androidx.startup.InitializationProvider"
-58-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-59            android:authorities="cifor.icraf.objects.androidx-startup"
-59-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-60            android:exported="false" >
-60-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-61            <meta-data
-61-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-62-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-63                android:value="androidx.startup" />
-63-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-64            <meta-data
-64-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-65-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-66                android:value="androidx.startup" />
-66-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-67            <meta-data
-67-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-69                android:value="androidx.startup" />
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-70        </provider>
-71
-72        <uses-library
-72-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-73            android:name="androidx.window.extensions"
-73-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-74            android:required="false" />
-74-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-75        <uses-library
-75-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-76            android:name="androidx.window.sidecar"
-76-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-77            android:required="false" />
-77-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-78
-79        <service
-79-->[androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
-80            android:name="androidx.room.MultiInstanceInvalidationService"
-80-->[androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
-81            android:directBootAware="true"
-81-->[androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
-82            android:exported="false" />
-82-->[androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
-83
-84        <provider
-84-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:32:9-40:20
-85            android:name="leakcanary.internal.LeakCanaryFileProvider"
-85-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:33:13-70
-86            android:authorities="com.squareup.leakcanary.fileprovider.cifor.icraf.objects"
-86-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:34:13-88
-87            android:exported="false"
-87-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:35:13-37
-88            android:grantUriPermissions="true" >
-88-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:36:13-47
-89            <meta-data
-89-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:37:13-39:66
-90                android:name="android.support.FILE_PROVIDER_PATHS"
-90-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:38:17-67
-91                android:resource="@xml/leak_canary_file_paths" />
-91-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:39:17-63
-92        </provider>
-93
-94        <activity
-94-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:42:9-73:20
-95            android:name="leakcanary.internal.activity.LeakActivity"
-95-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:43:13-69
-96            android:exported="true"
-96-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:44:13-36
-97            android:icon="@mipmap/leak_canary_icon"
-97-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:45:13-52
-98            android:label="@string/leak_canary_display_activity_label"
-98-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:46:13-71
-99            android:taskAffinity="com.squareup.leakcanary.cifor.icraf.objects"
-99-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:47:13-76
-100            android:theme="@style/leak_canary_LeakCanary.Base" >
-100-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:48:13-63
-101            <intent-filter android:label="@string/leak_canary_import_hprof_file" >
-101-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:49:13-72:29
-101-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:49:28-81
-102                <action android:name="android.intent.action.VIEW" />
-102-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:50:17-69
-102-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:50:25-66
-103
-104                <category android:name="android.intent.category.DEFAULT" />
-104-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:52:17-76
-104-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:52:27-73
-105                <category android:name="android.intent.category.BROWSABLE" />
-105-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:53:17-78
-105-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:53:27-75
-106
-107                <data android:scheme="file" />
+35        android:theme="@style/AppTheme" >
+35-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:16:9-40
+36        <activity
+36-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:18:9-27:20
+37            android:name="cifor.icraf.objects.main.activity.MainActivity"
+37-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:19:13-55
+38            android:exported="true" >
+38-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:20:13-36
+39            <intent-filter>
+39-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:21:13-25:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:17-69
+40-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:17-77
+42-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:26:9-35:20
+46            android:name="androidx.fragment.app.testing.EmptyFragmentActivity"
+46-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:27:13-79
+47            android:exported="true"
+47-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:28:13-36
+48            android:multiprocess="true"
+48-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:29:13-40
+49            android:taskAffinity=""
+49-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:30:13-36
+50            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" >
+50-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:31:13-78
+51            <intent-filter>
+51-->[androidx.fragment:fragment-testing-manifest:1.8.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/15ae4c89e773a21735512212b2685a03/transformed/fragment-testing-manifest-1.8.1/AndroidManifest.xml:32:13-34:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:17-69
+52-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:25-66
+53            </intent-filter>
+54        </activity>
+55
+56        <provider
+56-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+57            android:name="androidx.startup.InitializationProvider"
+57-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+58            android:authorities="cifor.icraf.objects.androidx-startup"
+58-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+59            android:exported="false" >
+59-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+60            <meta-data
+60-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+61-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+62                android:value="androidx.startup" />
+62-->[androidx.emoji2:emoji2:1.3.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/30e889f40705c71cdbec7d8cf3bc9d01/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+63            <meta-data
+63-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+64-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+65                android:value="androidx.startup" />
+65-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d2c9b726bd426ef0d3cc646515fac3be/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+68                android:value="androidx.startup" />
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+69        </provider>
+70
+71        <uses-library
+71-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+72            android:name="androidx.window.extensions"
+72-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+73            android:required="false" />
+73-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+74        <uses-library
+74-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+75            android:name="androidx.window.sidecar"
+75-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0] /Users/emmanuelmuturia/.gradle/caches/transforms-4/53faba1c1fc120a7e6c002f07195f5e7/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+77
+78        <service
+78-->[androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+79            android:name="androidx.room.MultiInstanceInvalidationService"
+79-->[androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+80            android:directBootAware="true"
+80-->[androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+81            android:exported="false" />
+81-->[androidx.room:room-runtime:2.6.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/d492a364e4ed90be62adb368b4838766/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+82
+83        <provider
+83-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:32:9-40:20
+84            android:name="leakcanary.internal.LeakCanaryFileProvider"
+84-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:33:13-70
+85            android:authorities="com.squareup.leakcanary.fileprovider.cifor.icraf.objects"
+85-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:34:13-88
+86            android:exported="false"
+86-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:35:13-37
+87            android:grantUriPermissions="true" >
+87-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:36:13-47
+88            <meta-data
+88-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:37:13-39:66
+89                android:name="android.support.FILE_PROVIDER_PATHS"
+89-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:38:17-67
+90                android:resource="@xml/leak_canary_file_paths" />
+90-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:39:17-63
+91        </provider>
+92
+93        <activity
+93-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:42:9-73:20
+94            android:name="leakcanary.internal.activity.LeakActivity"
+94-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:43:13-69
+95            android:exported="true"
+95-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:44:13-36
+96            android:icon="@mipmap/leak_canary_icon"
+96-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:45:13-52
+97            android:label="@string/leak_canary_display_activity_label"
+97-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:46:13-71
+98            android:taskAffinity="com.squareup.leakcanary.cifor.icraf.objects"
+98-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:47:13-76
+99            android:theme="@style/leak_canary_LeakCanary.Base" >
+99-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:48:13-63
+100            <intent-filter android:label="@string/leak_canary_import_hprof_file" >
+100-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:49:13-72:29
+100-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:49:28-81
+101                <action android:name="android.intent.action.VIEW" />
+101-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:50:17-69
+101-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:50:25-66
+102
+103                <category android:name="android.intent.category.DEFAULT" />
+103-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:52:17-76
+103-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:52:27-73
+104                <category android:name="android.intent.category.BROWSABLE" />
+104-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:53:17-78
+104-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:53:27-75
+105
+106                <data android:scheme="file" />
+106-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
+106-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:23-44
+107                <data android:scheme="content" />
 107-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
 107-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:23-44
-108                <data android:scheme="content" />
+108                <data android:mimeType="*/*" />
 108-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-108-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:23-44
-109                <data android:mimeType="*/*" />
+109                <data android:host="*" />
 109-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-110                <data android:host="*" />
+110                <data android:pathPattern=".*\\.hprof" />
 110-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-111                <data android:pathPattern=".*\\.hprof" />
+111                <data android:pathPattern=".*\\..*\\.hprof" />
 111-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-112                <data android:pathPattern=".*\\..*\\.hprof" />
+112                <data android:pathPattern=".*\\..*\\..*\\.hprof" />
 112-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-113                <data android:pathPattern=".*\\..*\\..*\\.hprof" />
+113                <data android:pathPattern=".*\\..*\\..*\\..*\\.hprof" />
 113-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-114                <data android:pathPattern=".*\\..*\\..*\\..*\\.hprof" />
+114                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.hprof" />
 114-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-115                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.hprof" />
+115                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
 115-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-116                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
+116                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
 116-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-117                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
-117-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:55:17-47
-118                <!--
-119            Since hprof isn't a standard MIME type, we have to declare such patterns.
-120            Most file providers will generate URIs including their own package name,
-121            which contains `.` characters that must be explicitly escaped in pathPattern.
-122            @see https://stackoverflow.com/a/31028507/703646
-123                -->
-124            </intent-filter>
-125        </activity>
-126
-127        <activity-alias
-127-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:75:9-92:26
-128            android:name="leakcanary.internal.activity.LeakLauncherActivity"
-128-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:76:13-77
-129            android:banner="@drawable/leak_canary_tv_icon"
-129-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:77:13-59
-130            android:enabled="@bool/leak_canary_add_launcher_icon"
-130-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:78:13-66
-131            android:exported="true"
-131-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:79:13-36
-132            android:icon="@mipmap/leak_canary_icon"
-132-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:80:13-52
-133            android:label="@string/leak_canary_display_activity_label"
-133-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:81:13-71
-134            android:targetActivity="leakcanary.internal.activity.LeakActivity"
-134-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:82:13-79
-135            android:taskAffinity="com.squareup.leakcanary.cifor.icraf.objects"
-135-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:83:13-76
-136            android:theme="@style/leak_canary_LeakCanary.Base" >
-136-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:84:13-63
-137            <intent-filter>
-137-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:85:13-91:29
-138                <action android:name="android.intent.action.MAIN" />
-138-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:17-69
-138-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:25-66
-139
-140                <category android:name="android.intent.category.LAUNCHER" />
-140-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:17-77
-140-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:27-74
-141                <!-- Android TV launcher intent -->
-142                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-142-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:90:17-86
-142-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:90:27-83
-143            </intent-filter>
-144        </activity-alias>
-145
-146        <activity
-146-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:94:9-100:68
-147            android:name="leakcanary.internal.RequestPermissionActivity"
-147-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:95:13-73
-148            android:excludeFromRecents="true"
-148-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:96:13-46
-149            android:icon="@mipmap/leak_canary_icon"
-149-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:97:13-52
-150            android:label="@string/leak_canary_storage_permission_activity_label"
-150-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:98:13-82
-151            android:taskAffinity="com.squareup.leakcanary.cifor.icraf.objects"
-151-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:99:13-76
-152            android:theme="@style/leak_canary_Theme.Transparent" />
-152-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:100:13-65
-153
-154        <receiver android:name="leakcanary.internal.NotificationReceiver" />
-154-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:102:9-77
-154-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:102:19-74
-155
-156        <provider
-156-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:8:9-12:40
-157            android:name="leakcanary.internal.MainProcessAppWatcherInstaller"
-157-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:9:13-78
-158            android:authorities="cifor.icraf.objects.leakcanary-installer"
-158-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:10:13-72
-159            android:enabled="@bool/leak_canary_watcher_auto_install"
-159-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:11:13-69
-160            android:exported="false" />
-160-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:12:13-37
-161        <provider
-161-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:8:9-12:40
-162            android:name="leakcanary.internal.PlumberInstaller"
-162-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:9:13-64
-163            android:authorities="cifor.icraf.objects.plumber-installer"
-163-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:10:13-69
-164            android:enabled="@bool/leak_canary_plumber_auto_install"
-164-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:11:13-69
-165            android:exported="false" />
-165-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:12:13-37
-166
-167        <receiver
-167-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-168            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-168-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-169            android:directBootAware="false"
-169-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-170            android:enabled="true"
-170-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-171            android:exported="true"
-171-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-172            android:permission="android.permission.DUMP" >
-172-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-173            <intent-filter>
-173-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-174                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-174-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-174-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-175            </intent-filter>
-176            <intent-filter>
-176-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-177                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-177-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-177-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-178            </intent-filter>
-179            <intent-filter>
-179-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-180                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-180-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-180-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-181            </intent-filter>
-182            <intent-filter>
-182-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-183                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-183-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-183-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-184            </intent-filter>
-185        </receiver>
-186    </application>
-187
-188</manifest>
+117                <!--
+118            Since hprof isn't a standard MIME type, we have to declare such patterns.
+119            Most file providers will generate URIs including their own package name,
+120            which contains `.` characters that must be explicitly escaped in pathPattern.
+121            @see https://stackoverflow.com/a/31028507/703646
+122                -->
+123            </intent-filter>
+124        </activity>
+125
+126        <activity-alias
+126-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:75:9-92:26
+127            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+127-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:76:13-77
+128            android:banner="@drawable/leak_canary_tv_icon"
+128-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:77:13-59
+129            android:enabled="@bool/leak_canary_add_launcher_icon"
+129-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:78:13-66
+130            android:exported="true"
+130-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:79:13-36
+131            android:icon="@mipmap/leak_canary_icon"
+131-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:80:13-52
+132            android:label="@string/leak_canary_display_activity_label"
+132-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:81:13-71
+133            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+133-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:82:13-79
+134            android:taskAffinity="com.squareup.leakcanary.cifor.icraf.objects"
+134-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:83:13-76
+135            android:theme="@style/leak_canary_LeakCanary.Base" >
+135-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:84:13-63
+136            <intent-filter>
+136-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:85:13-91:29
+137                <action android:name="android.intent.action.MAIN" />
+137-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:17-69
+137-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:22:25-66
+138
+139                <category android:name="android.intent.category.LAUNCHER" />
+139-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:17-77
+139-->/Users/emmanuelmuturia/Android/Projects/Objects/app/src/main/AndroidManifest.xml:24:27-74
+140                <!-- Android TV launcher intent -->
+141                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+141-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:90:17-86
+141-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:90:27-83
+142            </intent-filter>
+143        </activity-alias>
+144
+145        <activity
+145-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:94:9-100:68
+146            android:name="leakcanary.internal.RequestPermissionActivity"
+146-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:95:13-73
+147            android:excludeFromRecents="true"
+147-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:96:13-46
+148            android:icon="@mipmap/leak_canary_icon"
+148-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:97:13-52
+149            android:label="@string/leak_canary_storage_permission_activity_label"
+149-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:98:13-82
+150            android:taskAffinity="com.squareup.leakcanary.cifor.icraf.objects"
+150-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:99:13-76
+151            android:theme="@style/leak_canary_Theme.Transparent" />
+151-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:100:13-65
+152
+153        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+153-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:102:9-77
+153-->[com.squareup.leakcanary:leakcanary-android-core:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/c5dbca012eb92b5608c4ab2174bcb2c4/transformed/leakcanary-android-core-2.14/AndroidManifest.xml:102:19-74
+154
+155        <provider
+155-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:8:9-12:40
+156            android:name="leakcanary.internal.MainProcessAppWatcherInstaller"
+156-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:9:13-78
+157            android:authorities="cifor.icraf.objects.leakcanary-installer"
+157-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:10:13-72
+158            android:enabled="@bool/leak_canary_watcher_auto_install"
+158-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:11:13-69
+159            android:exported="false" />
+159-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/cfcb80eda17c679d2ad425fb535d5ef4/transformed/leakcanary-object-watcher-android-2.14/AndroidManifest.xml:12:13-37
+160        <provider
+160-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:8:9-12:40
+161            android:name="leakcanary.internal.PlumberInstaller"
+161-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:9:13-64
+162            android:authorities="cifor.icraf.objects.plumber-installer"
+162-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:10:13-69
+163            android:enabled="@bool/leak_canary_plumber_auto_install"
+163-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:11:13-69
+164            android:exported="false" />
+164-->[com.squareup.leakcanary:plumber-android:2.14] /Users/emmanuelmuturia/.gradle/caches/transforms-4/24aa78708f47d7ebe2dca131b42065c9/transformed/plumber-android-2.14/AndroidManifest.xml:12:13-37
+165
+166        <receiver
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+167            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+168            android:directBootAware="false"
+168-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+169            android:enabled="true"
+169-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+170            android:exported="true"
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+171            android:permission="android.permission.DUMP" >
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+172            <intent-filter>
+172-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+173                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+174            </intent-filter>
+175            <intent-filter>
+175-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+176                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+177            </intent-filter>
+178            <intent-filter>
+178-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+179                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+180            </intent-filter>
+181            <intent-filter>
+181-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+182                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/emmanuelmuturia/.gradle/caches/transforms-4/2fdc39bfa673c7470065859f5fd3531f/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+183            </intent-filter>
+184        </receiver>
+185    </application>
+186
+187</manifest>

@@ -20,10 +20,6 @@
         "source": "cifor.icraf.objects.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "cifor.icraf.objects.app-debug-57:/layout_object_item.xml.flat",
-        "source": "cifor.icraf.objects.app-main-59:/layout/object_item.xml"
-    },
-    {
         "merged": "cifor.icraf.objects.app-debug-57:/drawable_ic_launcher_background.xml.flat",
         "source": "cifor.icraf.objects.app-main-59:/drawable/ic_launcher_background.xml"
     },
@@ -70,6 +66,10 @@
     {
         "merged": "cifor.icraf.objects.app-debug-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "cifor.icraf.objects.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "cifor.icraf.objects.app-debug-57:/layout_country_item.xml.flat",
+        "source": "cifor.icraf.objects.app-main-59:/layout/country_item.xml"
     },
     {
         "merged": "cifor.icraf.objects.app-debug-57:/mipmap-mdpi_ic_launcher_round.webp.flat",

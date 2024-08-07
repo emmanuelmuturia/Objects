@@ -26,7 +26,7 @@ class RemoteSourceImplementation(
                             countryName = countryDTO.countryName,
                             countryCurrency = countryDTO.countryCurrency,
                             countryCode = countryDTO.countryCode,
-                            countryCounties = countryDTO.countryCounties,
+                            countryCounties = countryDTO.countryCounties.map { it.toCountyEntity() },
                             countryPhoneCode = countryDTO.countryPhoneCode
                         )
                     )

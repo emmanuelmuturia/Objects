@@ -51,7 +51,7 @@
         android:id="@+id/homeFragmentErrorMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Unable To Fetch Objects"
+        android:text="Unable To Fetch Countries"
         android:textColor="@color/md_theme_onBackground"
         android:textSize="21sp"
         app:layout_constraintBottom_toBottomOf="parent"

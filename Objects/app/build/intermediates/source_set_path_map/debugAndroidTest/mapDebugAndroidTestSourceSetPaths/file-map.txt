@@ -21,7 +21,7 @@ cifor.icraf.objects.test.app-lifecycle-viewmodel-2.6.2-19 /Users/emmanuelmuturia
 cifor.icraf.objects.test.app-core-ktx-1.13.1-20 /Users/emmanuelmuturia/.gradle/caches/transforms-4/ba762436f2a1de60b1f03d89c7aa4750/transformed/core-ktx-1.13.1/res
 cifor.icraf.objects.test.app-annotation-experimental-1.4.0-21 /Users/emmanuelmuturia/.gradle/caches/transforms-4/e30e30e43c5869d6526828554cf12494/transformed/annotation-experimental-1.4.0/res
 cifor.icraf.objects.test.app-core-1.13.1-22 /Users/emmanuelmuturia/.gradle/caches/transforms-4/ff1e7f4eb33bbaf926fa52dc611b52f6/transformed/core-1.13.1/res
-cifor.icraf.objects.test.app-androidTest-23 /Users/emmanuelmuturia/Android/Projects/app/build/generated/res/resValues/androidTest/debug
-cifor.icraf.objects.test.app-mergeDebugAndroidTestResources-24 /Users/emmanuelmuturia/Android/Projects/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-cifor.icraf.objects.test.app-mergeDebugAndroidTestResources-25 /Users/emmanuelmuturia/Android/Projects/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-cifor.icraf.objects.test.app-debugAndroidTest-26 /Users/emmanuelmuturia/Android/Projects/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+cifor.icraf.objects.test.app-androidTest-23 /Users/emmanuelmuturia/Android/Projects/Objects/app/build/generated/res/resValues/androidTest/debug
+cifor.icraf.objects.test.app-mergeDebugAndroidTestResources-24 /Users/emmanuelmuturia/Android/Projects/Objects/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+cifor.icraf.objects.test.app-mergeDebugAndroidTestResources-25 /Users/emmanuelmuturia/Android/Projects/Objects/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+cifor.icraf.objects.test.app-debugAndroidTest-26 /Users/emmanuelmuturia/Android/Projects/Objects/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
