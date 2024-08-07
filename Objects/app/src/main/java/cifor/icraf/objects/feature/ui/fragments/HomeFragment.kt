@@ -42,18 +42,7 @@ class HomeFragment : Fragment() {
             (activity as AppCompatActivity).setSupportActionBar(binding.homeFragmentToolBar)
         }
 
-        val homeFragmentAdapter = HomeFragmentAdapter(
-            onSubmitObjectButtonClicked = { objectId, objectName ->
-                viewLifecycleOwner.lifecycleScope.launch {
-                    objectsViewModel.postObject(
-                        myObject = Object(
-                            objectId = objectId,
-                            objectName = objectName
-                        )
-                    )
-                }
-            }
-        )
+        val homeFragmentAdapter = HomeFragmentAdapter()
 
         binding.objectList.adapter = homeFragmentAdapter
 
@@ -76,25 +65,6 @@ class HomeFragment : Fragment() {
 
                 binding.homeFragmentErrorMessageValue.visibility =
                     if (objectsUIState.error != null) View.VISIBLE else View.GONE
-
-                objectsUIState.responseObject?.let { responseObject ->
-                    val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext())
-                    builder.setTitle("Object response")
-                        .setMessage(
-                            """
-                    Object ID: ${responseObject.objectId}
-                    Object Name: ${responseObject.objectName}
-                    Object Creation Time: ${responseObject.objectCreatedAt}
-                    """.trimIndent()
-                        )
-                    val dialog: AlertDialog = builder.create()
-                    dialog.show()
-                    Toast.makeText(
-                        context,
-                        "You have posted: ${responseObject.objectName}",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
             }
         }
 

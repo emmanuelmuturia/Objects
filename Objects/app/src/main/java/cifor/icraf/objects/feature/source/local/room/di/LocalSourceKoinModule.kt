@@ -14,7 +14,7 @@ val localSourceKoinModule = module {
         Room.databaseBuilder(
             context = androidContext(),
             klass = ObjectsDatabase::class.java,
-            name = "RestDatabase"
+            name = "CountriesDatabase"
         ).build()
     }
 
@@ -25,7 +25,8 @@ val localSourceKoinModule = module {
     single<LocalSource> {
         LocalSourceImplementation(
             objectsDao = get(),
-            ioDispatcher = get()
+            ioDispatcher = get(),
+            remoteSource = get()
         )
     }
 

@@ -1,7 +1,5 @@
 package cifor.icraf.objects.feature.ui.viewmodel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
@@ -14,8 +12,7 @@ import kotlinx.coroutines.launch
 import timber.log.Timber
 
 class ObjectsViewModel(
-    private val objectsRepository: ObjectsRepository,
-    private val savedStateHandle: SavedStateHandle
+    private val objectsRepository: ObjectsRepository
 ) : ViewModel() {
 
     val objectsUIState = MutableStateFlow(value = ObjectsUIState())
@@ -27,7 +24,7 @@ class ObjectsViewModel(
     fun getAllSubjects() {
         objectsUIState.value = ObjectsUIState(isLoading = true)
         viewModelScope.launch {
-            objectsRepository.getAllObjects().asResult().collect { result ->
+            objectsRepository.getAllCountries().asResult().collect { result ->
                 when (result) {
 
                     is NetworkResult.Success -> {
@@ -43,23 +40,6 @@ class ObjectsViewModel(
                     }
 
                 }
-            }
-        }
-    }
-
-    fun postObject(myObject: Object) {
-        viewModelScope.launch {
-            try {
-                val responseObject = objectsRepository.postObject(myObject = myObject)
-                objectsUIState.update {
-                    it.copy(responseObject = responseObject)
-                }
-                Timber.tag("ObjectsViewModel").d(message = "Response: $responseObject")
-            } catch (e: Exception) {
-                objectsUIState.update {
-                    it.copy(error = e.message)
-                }
-                Timber.tag("ObjectsViewModel").e(e, message = "Error: ${e.message}")
             }
         }
     }
