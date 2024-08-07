@@ -25,7 +25,6 @@ val localSourceKoinModule = module {
     single<LocalSource> {
         LocalSourceImplementation(
             objectsDao = get(),
-            remoteSource = get(),
             ioDispatcher = get()
         )
     }

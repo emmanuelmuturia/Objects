@@ -36,7 +36,6 @@ val remoteSourceKoinModule = module {
 
     single<RemoteSource> {
         RemoteSourceImplementation(
-            objectsDao = get(),
             objectsApi = get(),
             ioDispatcher = get()
         )
