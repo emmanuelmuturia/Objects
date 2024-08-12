@@ -1,7 +1,7 @@
 package cifor.icraf.objects.feature.source.remote.dto
 
 
-import cifor.icraf.objects.feature.source.local.room.entities.CountyEntity
+import cifor.icraf.objects.feature.source.local.entities.CountyEntity
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

@@ -1,6 +1,6 @@
 package cifor.icraf.objects.feature.data.models
 
-import cifor.icraf.objects.feature.source.local.room.entities.CountyEntity
+import cifor.icraf.objects.feature.source.local.entities.CountyEntity
 
 data class County(
     val countyName: String,

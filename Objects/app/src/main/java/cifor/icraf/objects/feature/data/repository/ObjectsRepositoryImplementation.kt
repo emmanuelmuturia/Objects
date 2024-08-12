@@ -3,8 +3,8 @@ package cifor.icraf.objects.feature.data.repository
 import cifor.icraf.objects.feature.data.models.Country
 import cifor.icraf.objects.feature.data.models.toCounty
 import cifor.icraf.objects.feature.data.models.toCountyEntity
-import cifor.icraf.objects.feature.source.local.room.entities.CountryEntity
-import cifor.icraf.objects.feature.source.local.room.source.LocalSource
+import cifor.icraf.objects.feature.source.local.entities.CountryEntity
+import cifor.icraf.objects.feature.source.local.source.LocalSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -40,7 +40,8 @@ class ObjectsRepositoryImplementation(
             countryCode = country.countryCode,
             countryCounties = country.countryCounties.map { it.toCountyEntity() },
             countryPhoneCode = country.countryPhoneCode
-        ))
+        )
+        )
     }
 
 }
