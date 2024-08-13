@@ -75,7 +75,7 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-        binding.objectList.adapter = null
-        viewLifecycleOwner.lifecycleScope.coroutineContext.cancelChildren()
+        //binding.objectList.adapter = null
+        //viewLifecycleOwner.lifecycleScope.coroutineContext.cancelChildren()
     }
 }
