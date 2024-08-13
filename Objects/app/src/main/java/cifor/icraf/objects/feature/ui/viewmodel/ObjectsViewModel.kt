@@ -31,7 +31,6 @@ class ObjectsViewModel(
                         objectsUIState.update {
                             it.copy(isLoading = false, objects = result.data)
                         }
-                        Log.d("The Country List", "Your countries are: ${result.data}")
                     }
 
                     is NetworkResult.Error -> {
