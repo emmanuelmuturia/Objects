@@ -4,6 +4,7 @@ import cifor.icraf.objects.feature.source.mock.model.MockCountry
 import cifor.icraf.objects.feature.source.mock.model.MockCounty
 import cifor.icraf.objects.feature.source.mock.model.MockSubCounty
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
@@ -149,6 +150,7 @@ class MockSourceImplementation(
     )
 
     override suspend fun getAllMockCountries(): Flow<List<MockCountry>> = flow {
+        delay(timeMillis = 7000)
         emit(value = mockCountries)
     }.flowOn(context = ioDispatcher)
 
