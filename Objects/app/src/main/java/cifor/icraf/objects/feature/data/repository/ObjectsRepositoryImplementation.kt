@@ -5,6 +5,7 @@ import cifor.icraf.objects.feature.data.models.toCounty
 import cifor.icraf.objects.feature.data.models.toCountyEntity
 import cifor.icraf.objects.feature.source.local.entities.CountryEntity
 import cifor.icraf.objects.feature.source.local.source.LocalSource
+import cifor.icraf.objects.feature.source.mock.source.MockSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -12,12 +13,13 @@ import kotlinx.coroutines.withContext
 
 class ObjectsRepositoryImplementation(
     private val ioDispatcher: CoroutineDispatcher,
-    private val localSource: LocalSource
+    //private val localSource: LocalSource,
+    private val mockSource: MockSource
 ) : ObjectsRepository {
 
     override suspend fun getAllCountries(): Flow<List<Country>> {
         return withContext(context = ioDispatcher) {
-            localSource.getAllCountries().map { countries ->
+            /*localSource.getAllCountries().map { countries ->
                 countries.map { countryEntity ->
                     Country(
                         countryId = countryEntity.countryId,
@@ -28,11 +30,23 @@ class ObjectsRepositoryImplementation(
                         countryPhoneCode = countryEntity.countryPhoneCode
                     )
                 }
+            }*/
+            mockSource.getAllMockCountries().map { mockCountries ->
+                mockCountries.map { mockCountry ->
+                    Country(
+                        countryId = mockCountry.countryId,
+                        countryName = mockCountry.countryName,
+                        countryCurrency = mockCountry.countryCurrency,
+                        countryCode = mockCountry.countryCode,
+                        countryCounties = mockCountry.countryCounties.map { it.toCounty() },
+                        countryPhoneCode = mockCountry.countryPhoneCode
+                    )
+                }
             }
         }
     }
 
-    override suspend fun upsertCountry(country: Country) {
+    /*override suspend fun upsertCountry(country: Country) {
         localSource.upsertCountry(countryEntity = CountryEntity(
             countryId = country.countryId,
             countryName = country.countryName,
@@ -42,6 +56,6 @@ class ObjectsRepositoryImplementation(
             countryPhoneCode = country.countryPhoneCode
         )
         )
-    }
+    }*/
 
 }

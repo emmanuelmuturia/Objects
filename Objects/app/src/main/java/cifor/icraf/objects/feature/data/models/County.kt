@@ -1,6 +1,7 @@
 package cifor.icraf.objects.feature.data.models
 
 import cifor.icraf.objects.feature.source.local.entities.CountyEntity
+import cifor.icraf.objects.feature.source.mock.model.MockCounty
 
 data class County(
     val countyName: String,
@@ -21,5 +22,13 @@ fun County.toCountyEntity(): CountyEntity {
         countyId = this.countyId,
         countyName = this.countyName,
         countySubCounties = this.countySubCounties.map { it.toSubCountyEntity() }
+    )
+}
+
+fun MockCounty.toCounty(): County {
+    return County(
+        countyName = this.countyName,
+        countyId = this.countyId,
+        countySubCounties = this.countySubCounties.map { it.toSubCounty() }
     )
 }

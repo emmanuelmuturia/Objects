@@ -1,5 +1,6 @@
 package cifor.icraf.objects.feature.ui.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
@@ -30,6 +31,7 @@ class ObjectsViewModel(
                         objectsUIState.update {
                             it.copy(isLoading = false, objects = result.data)
                         }
+                        Log.d("The Country List", "Your countries are: ${result.data}")
                     }
 
                     is NetworkResult.Error -> {

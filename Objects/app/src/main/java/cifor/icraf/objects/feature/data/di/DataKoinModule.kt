@@ -12,10 +12,14 @@ val dataKoinModule = module {
     single<ObjectsRepository> {
         ObjectsRepositoryImplementation(
             ioDispatcher = get(),
-            localSource = get()
+            //localSource = get(),
+            mockSource = get()
         )
     }
 
-    includes(module = listOf(remoteSourceKoinModule, localSourceKoinModule, mockSourceKoinModule))
+    includes(module = listOf(
+        remoteSourceKoinModule,
+        localSourceKoinModule,
+        mockSourceKoinModule))
 
 }
