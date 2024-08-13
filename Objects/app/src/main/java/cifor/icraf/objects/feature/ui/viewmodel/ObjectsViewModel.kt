@@ -1,6 +1,5 @@
 package cifor.icraf.objects.feature.ui.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
@@ -21,7 +20,7 @@ class ObjectsViewModel(
         getAllSubjects()
     }
 
-    private fun getAllSubjects() {
+    fun getAllSubjects() {
         objectsUIState.value = ObjectsUIState(isLoading = true)
         viewModelScope.launch {
             objectsRepository.getAllCountries().asResult().collect { result ->
