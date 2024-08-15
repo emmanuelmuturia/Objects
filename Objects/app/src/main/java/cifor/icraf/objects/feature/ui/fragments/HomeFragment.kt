@@ -37,32 +37,6 @@ class HomeFragment : Fragment() {
             (activity as AppCompatActivity).setSupportActionBar(binding.homeFragmentToolBar)
         }
 
-        val homeFragmentAdapter = HomeFragmentAdapter()
-
-        binding.objectList.adapter = homeFragmentAdapter
-
-        viewLifecycleOwner.lifecycleScope.launch {
-            objectsViewModel.objectsUIState.collect { objectsUIState ->
-                Timber.tag("HomeFragment").d(message = "UIState: $objectsUIState") // Debug line
-
-                homeFragmentAdapter.submitList(objectsUIState.objects)
-
-                binding.homeFragmentCircularProgressBar.visibility =
-                    if (objectsUIState.isLoading) View.VISIBLE else View.GONE
-
-                binding.objectList.visibility =
-                    if (objectsUIState.isLoading) View.GONE else View.VISIBLE
-
-                binding.homeFragmentErrorMessage.visibility =
-                    if (objectsUIState.error != null) View.VISIBLE else View.GONE
-
-                binding.homeFragmentErrorMessageValue.text = objectsUIState.error
-
-                binding.homeFragmentErrorMessageValue.visibility =
-                    if (objectsUIState.error != null) View.VISIBLE else View.GONE
-            }
-        }
-
         return binding.root
 
     }
