@@ -1,8 +1,11 @@
 package cifor.icraf.objects.feature.data.repository
 
 import cifor.icraf.objects.feature.data.models.Country
+import cifor.icraf.objects.feature.data.models.County
+import cifor.icraf.objects.feature.data.models.SubCounty
 import cifor.icraf.objects.feature.data.models.toCounty
 import cifor.icraf.objects.feature.data.models.toCountyEntity
+import cifor.icraf.objects.feature.data.models.toSubCounty
 import cifor.icraf.objects.feature.source.local.entities.CountryEntity
 import cifor.icraf.objects.feature.source.local.source.LocalSource
 import cifor.icraf.objects.feature.source.mock.source.MockSource
@@ -13,7 +16,7 @@ import kotlinx.coroutines.withContext
 
 class ObjectsRepositoryImplementation(
     private val ioDispatcher: CoroutineDispatcher,
-    //private val localSource: LocalSource,
+    private val localSource: LocalSource,
     private val mockSource: MockSource
 ) : ObjectsRepository {
 
@@ -57,5 +60,28 @@ class ObjectsRepositoryImplementation(
         )
         )
     }*/
+
+    override suspend fun getCountiesById(countryId: Int): List<County> {
+        return withContext(context = ioDispatcher) {
+            localSource.getCountiesById(countryId = countryId).map { countyEntity ->
+                County(
+                    countyId = countyEntity.countyId,
+                    countyName = countyEntity.countyName,
+                    countySubCounties = countyEntity.countySubCounties.map { it.toSubCounty() }
+                )
+            }
+        }
+    }
+
+    override suspend fun getSubCountiesById(countyId: Int): List<SubCounty> {
+        return withContext(context = ioDispatcher) {
+            localSource.getSubCountiesById(countyId = countyId).map { subCountyEntity ->
+                SubCounty(
+                    subCountyId = subCountyEntity.subCountyId,
+                    subCountyName = subCountyEntity.subCountyName
+                )
+            }
+        }
+    }
 
 }

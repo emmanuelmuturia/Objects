@@ -4,6 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
 import cifor.icraf.objects.commons.state.asResult
+import cifor.icraf.objects.feature.data.models.County
+import cifor.icraf.objects.feature.data.models.SubCounty
 import cifor.icraf.objects.feature.data.repository.ObjectsRepository
 import cifor.icraf.objects.feature.ui.state.ObjectsUIState
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -41,6 +43,14 @@ class ObjectsViewModel(
                 }
             }
         }
+    }
+
+    suspend fun getCountiesById(countryId: Int): List<County> {
+        return objectsRepository.getCountiesById(countryId = countryId)
+    }
+
+    suspend fun getSubCountiesById(countyId: Int): List<SubCounty> {
+        return objectsRepository.getSubCountiesById(countyId = countyId)
     }
 
 }

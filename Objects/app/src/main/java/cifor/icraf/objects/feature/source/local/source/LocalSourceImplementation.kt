@@ -1,7 +1,11 @@
 package cifor.icraf.objects.feature.source.local.source
 
+import cifor.icraf.objects.feature.data.models.County
+import cifor.icraf.objects.feature.data.models.SubCounty
 import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.entities.CountryEntity
+import cifor.icraf.objects.feature.source.local.entities.CountyEntity
+import cifor.icraf.objects.feature.source.local.entities.SubCountyEntity
 import cifor.icraf.objects.feature.source.remote.source.RemoteSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
@@ -39,6 +43,18 @@ class LocalSourceImplementation(
     override suspend fun upsertCountry(countryEntity: CountryEntity) {
         withContext(context = ioDispatcher) {
             objectsDao.upsertCountryEntity(countryEntity = countryEntity)
+        }
+    }
+
+    override suspend fun getCountiesById(countryId: Int): List<CountyEntity> {
+        return withContext(context = ioDispatcher) {
+            objectsDao.getAllCountiesById(countryId = countryId)
+        }
+    }
+
+    override suspend fun getSubCountiesById(countyId: Int): List<SubCountyEntity> {
+        return withContext(context = ioDispatcher) {
+            objectsDao.getAllSubCountiesById(countyId = countyId)
         }
     }
 

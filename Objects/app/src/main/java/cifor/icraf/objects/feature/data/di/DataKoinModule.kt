@@ -12,7 +12,7 @@ val dataKoinModule = module {
     single<ObjectsRepository> {
         ObjectsRepositoryImplementation(
             ioDispatcher = get(),
-            //localSource = get(),
+            localSource = get(),
             mockSource = get()
         )
     }
