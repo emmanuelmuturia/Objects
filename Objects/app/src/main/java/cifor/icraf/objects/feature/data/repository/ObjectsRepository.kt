@@ -12,6 +12,6 @@ interface ObjectsRepository {
 
     suspend fun getCountryByName(countryName: String): Country?
 
-    suspend fun getSubCountiesById(countyId: Int): County?
+    suspend fun getSubCountiesById(countryId: Int): County?
 
 }

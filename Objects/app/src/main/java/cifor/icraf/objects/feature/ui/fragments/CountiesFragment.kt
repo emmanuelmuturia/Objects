@@ -1,7 +1,6 @@
 package cifor.icraf.objects.feature.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,8 +13,6 @@ import androidx.navigation.fragment.findNavController
 import cifor.icraf.objects.databinding.FragmentCountiesBinding
 import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.launch
-import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class CountiesFragment : Fragment() {
@@ -42,13 +39,12 @@ class CountiesFragment : Fragment() {
             viewLifecycleOwner.repeatOnLifecycle(state = Lifecycle.State.STARTED) {
                 objectsViewModel.country.collect { country ->
                     if (country != null) {
-                        Log.d("Country:", "$country")
                         val countiesFragmentSpinner = binding.countiesFragmentSpinner
                         countiesFragmentSpinner.adapter =
                             ArrayAdapter(
                                 requireContext(),
                                 android.R.layout.simple_spinner_dropdown_item,
-                                country.countryCounties
+                                country.countryCounties.map { it.countyName }
                             )
 
                         binding.homeFragmentNextButton.setOnClickListener {

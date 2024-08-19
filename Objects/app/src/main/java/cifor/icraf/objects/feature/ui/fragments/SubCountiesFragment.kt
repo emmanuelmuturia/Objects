@@ -1,21 +1,18 @@
 package cifor.icraf.objects.feature.ui.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import cifor.icraf.objects.R
 import cifor.icraf.objects.databinding.FragmentSubCountiesBinding
-import cifor.icraf.objects.feature.data.models.County
 import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.launch
-import kotlinx.serialization.json.Json
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SubCountiesFragment : Fragment() {
@@ -37,7 +34,7 @@ class SubCountiesFragment : Fragment() {
         )
 
         val countyId = SubCountiesFragmentArgs.fromBundle(bundle = requireArguments()).countryId
-        objectsViewModel.getSubCountiesById(countyId = countyId)
+        objectsViewModel.getSubCountiesById(countryId = countyId)
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(state = Lifecycle.State.STARTED) {
@@ -48,7 +45,7 @@ class SubCountiesFragment : Fragment() {
                                 ArrayAdapter(
                                     requireContext(),
                                     android.R.layout.simple_spinner_dropdown_item,
-                                    county.countySubCounties
+                                    county.countySubCounties.map { it.subCountyName }
                                 )
                     }
                 }

@@ -1,12 +1,9 @@
 package cifor.icraf.objects.feature.source.mock.source
 
-import cifor.icraf.objects.feature.source.local.entities.CountryEntity
-import cifor.icraf.objects.feature.source.local.entities.CountyEntity
 import cifor.icraf.objects.feature.source.mock.model.MockCountry
 import cifor.icraf.objects.feature.source.mock.model.MockCounty
 import cifor.icraf.objects.feature.source.mock.model.MockSubCounty
 import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.firstOrNull
@@ -165,7 +162,7 @@ class MockSourceImplementation(
         }
     }
 
-    override suspend fun getSubCountiesById(countyId: Int): MockCounty? {
+    override suspend fun getSubCountiesById(countryId: Int): MockCounty? {
         return withContext(context = ioDispatcher) {
             getAllMockCountries() // Returns a Flow<List<CountryEntity>>
                 .map { countries ->
@@ -175,10 +172,10 @@ class MockSourceImplementation(
                 }
                 .firstOrNull { countyList ->
                     countyList.find { countyEntity ->
-                        countyEntity.countyId == countyId
+                        countyEntity.countyId == countryId
                     } != null
                 }?.find { countyEntity ->
-                    countyEntity.countyId == countyId
+                    countyEntity.countyId == countryId
                 }
         }
     }

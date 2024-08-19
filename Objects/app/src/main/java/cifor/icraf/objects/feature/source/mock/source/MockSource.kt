@@ -10,6 +10,6 @@ interface MockSource {
 
     suspend fun getCountryByName(countryName: String): MockCountry?
 
-    suspend fun getSubCountiesById(countyId: Int): MockCounty?
+    suspend fun getSubCountiesById(countryId: Int): MockCounty?
 
 }
