@@ -1,11 +1,9 @@
 package cifor.icraf.objects.feature.source.local.source
 
-import cifor.icraf.objects.feature.data.models.County
-import cifor.icraf.objects.feature.data.models.SubCounty
 import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.entities.CountryEntity
 import cifor.icraf.objects.feature.source.local.entities.CountyEntity
-import cifor.icraf.objects.feature.source.local.entities.SubCountyEntity
+import cifor.icraf.objects.feature.source.mock.source.MockSource
 import cifor.icraf.objects.feature.source.remote.source.RemoteSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
@@ -18,7 +16,7 @@ import kotlinx.coroutines.withContext
 class LocalSourceImplementation(
     private val objectsDao: ObjectsDao,
     private val ioDispatcher: CoroutineDispatcher,
-    private val remoteSource: RemoteSource
+    private val remoteSource: RemoteSource,
 ) : LocalSource {
 
     override suspend fun getAllCountries(): Flow<List<CountryEntity>> {
@@ -47,30 +45,5 @@ class LocalSourceImplementation(
             objectsDao.upsertCountryEntity(countryEntity = countryEntity)
         }
     }
-
-    override suspend fun getCountiesById(countryId: Int): CountryEntity? {
-        return withContext(context = ioDispatcher) {
-            getAllCountries().first().find { it.countryId == countryId }
-        }
-    }
-
-    override suspend fun getSubCountiesById(countyId: Int): CountyEntity? {
-        return withContext(context = ioDispatcher) {
-            getAllCountries() // Returns a Flow<List<CountryEntity>>
-                .map { countries ->
-                    countries.flatMap { countryEntity ->
-                        countryEntity.countryCounties // List<CountyEntity>
-                    }
-                }
-                .firstOrNull { countyList ->
-                    countyList.find { countyEntity ->
-                        countyEntity.countyId == countyId
-                    } != null
-                }?.find { countyEntity ->
-                    countyEntity.countyId == countyId
-                }
-        }
-    }
-
 
 }

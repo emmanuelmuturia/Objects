@@ -1,13 +1,19 @@
 package cifor.icraf.objects.feature.source.mock.source
 
+import cifor.icraf.objects.feature.source.local.entities.CountryEntity
+import cifor.icraf.objects.feature.source.local.entities.CountyEntity
 import cifor.icraf.objects.feature.source.mock.model.MockCountry
 import cifor.icraf.objects.feature.source.mock.model.MockCounty
 import cifor.icraf.objects.feature.source.mock.model.MockSubCounty
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.withContext
 
 class MockSourceImplementation(
     private val ioDispatcher: CoroutineDispatcher
@@ -152,5 +158,29 @@ class MockSourceImplementation(
     override suspend fun getAllMockCountries(): Flow<List<MockCountry>> = flow {
         emit(value = mockCountries)
     }.flowOn(context = ioDispatcher)
+
+    override suspend fun getCountryByName(countryName: String): MockCountry? {
+        return withContext(context = ioDispatcher) {
+            getAllMockCountries().first().find { it.countryName == countryName }
+        }
+    }
+
+    override suspend fun getSubCountiesById(countyId: Int): MockCounty? {
+        return withContext(context = ioDispatcher) {
+            getAllMockCountries() // Returns a Flow<List<CountryEntity>>
+                .map { countries ->
+                    countries.flatMap { countryEntity ->
+                        countryEntity.countryCounties // List<CountyEntity>
+                    }
+                }
+                .firstOrNull { countyList ->
+                    countyList.find { countyEntity ->
+                        countyEntity.countyId == countyId
+                    } != null
+                }?.find { countyEntity ->
+                    countyEntity.countyId == countyId
+                }
+        }
+    }
 
 }

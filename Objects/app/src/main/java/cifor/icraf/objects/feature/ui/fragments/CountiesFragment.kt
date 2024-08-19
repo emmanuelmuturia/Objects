@@ -1,18 +1,21 @@
 package cifor.icraf.objects.feature.ui.fragments
 
-import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import cifor.icraf.objects.R
 import cifor.icraf.objects.databinding.FragmentCountiesBinding
 import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.launch
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class CountiesFragment : Fragment() {
@@ -32,26 +35,37 @@ class CountiesFragment : Fragment() {
             false
         )
 
-        viewLifecycleOwner.lifecycleScope.launch {
-            val countryId = CountiesFragmentArgs.fromBundle(bundle = requireArguments()).countryId
-            val countiesFragmentSpinner = binding.countiesFragmentSpinner
-            countiesFragmentSpinner.adapter = ArrayAdapter(
-                requireContext(),
-                android.R.layout.simple_spinner_dropdown_item,
-                objectsViewModel.getCountiesById(countryId = countryId)
-            )
+        val countryName = CountiesFragmentArgs.fromBundle(bundle = requireArguments()).country
+        objectsViewModel.getCountryByName(countryName = countryName)
 
-            binding.homeFragmentNextButton.setOnClickListener {
-                val action = CountiesFragmentDirections.actionCountiesFragmentToSubCountiesFragment(
-                    countyId = countryId
-                )
-                findNavController().navigate(action)
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(state = Lifecycle.State.STARTED) {
+                objectsViewModel.country.collect { country ->
+                    if (country != null) {
+                        Log.d("Country:", "$country")
+                        val countiesFragmentSpinner = binding.countiesFragmentSpinner
+                        countiesFragmentSpinner.adapter =
+                            ArrayAdapter(
+                                requireContext(),
+                                android.R.layout.simple_spinner_dropdown_item,
+                                country.countryCounties
+                            )
+
+                        binding.homeFragmentNextButton.setOnClickListener {
+                            val action = CountiesFragmentDirections.actionCountiesFragmentToSubCountiesFragment(
+                                countryId = country.countryId
+                            )
+                            findNavController().navigate(action)
+                        }
+
+                        binding.countiesFragmentToolBar.setNavigationOnClickListener {
+                            findNavController().navigateUp()
+                        }
+                    }
+                }
             }
         }
 
-        binding.countiesFragmentToolBar.setNavigationOnClickListener {
-            findNavController().navigateUp()
-        }
         return binding.root
     }
 

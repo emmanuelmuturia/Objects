@@ -1,16 +1,16 @@
 package cifor.icraf.objects.feature.ui.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
 import cifor.icraf.objects.commons.state.asResult
 import cifor.icraf.objects.feature.data.models.Country
 import cifor.icraf.objects.feature.data.models.County
-import cifor.icraf.objects.feature.data.models.SubCounty
 import cifor.icraf.objects.feature.data.repository.ObjectsRepository
 import cifor.icraf.objects.feature.ui.state.ObjectsUIState
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
@@ -19,6 +19,12 @@ class ObjectsViewModel(
 ) : ViewModel() {
 
     val objectsUIState = MutableStateFlow(value = ObjectsUIState())
+
+    private val _country: MutableStateFlow<Country?> = MutableStateFlow(value = null)
+    val country: StateFlow<Country?> = _country.asStateFlow()
+
+    private val _county: MutableStateFlow<County?> = MutableStateFlow(value = null)
+    val county: StateFlow<County?> = _county.asStateFlow()
 
     init {
         getAllSubjects()
@@ -47,20 +53,20 @@ class ObjectsViewModel(
         }
     }
 
-    fun getCountiesById(countryId: Int): Country? {
-        var country: Country? = null
+    fun getCountryByName(countryName: String) {
         viewModelScope.launch {
-            country = objectsRepository.getCountiesById(countryId = countryId)
+            _country.update {
+                objectsRepository.getCountryByName(countryName = countryName)
+            }
         }
-        return country
     }
 
-    fun getSubCountiesById(countyId: Int): County? {
-        var county: County?= null
+    fun getSubCountiesById(countyId: Int) {
         viewModelScope.launch {
-            county = objectsRepository.getSubCountiesById(countyId = countyId)
+            _county.update {
+                objectsRepository.getSubCountiesById(countyId = countyId)
+            }
         }
-        return county
     }
 
 }

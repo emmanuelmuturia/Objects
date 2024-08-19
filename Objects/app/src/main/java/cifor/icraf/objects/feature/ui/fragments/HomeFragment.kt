@@ -1,24 +1,21 @@
 package cifor.icraf.objects.feature.ui.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import cifor.icraf.objects.R
 import cifor.icraf.objects.databinding.FragmentHomeBinding
-import cifor.icraf.objects.feature.data.models.Country
-import cifor.icraf.objects.feature.ui.adapter.HomeFragmentAdapter
 import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.launch
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import timber.log.Timber
 
 class HomeFragment : Fragment() {
 
@@ -53,13 +50,11 @@ class HomeFragment : Fragment() {
                     uiState.objects.map { it.countryName }
                 )
 
-                uiState.objects.map { country ->
-                    binding.homeFragmentNextButton.setOnClickListener {
-                        val actions = HomeFragmentDirections.actionHomeFragmentToCountiesFragment(
-                            countryId = country.countryId
-                        )
-                        findNavController().navigate(actions)
-                    }
+                binding.homeFragmentNextButton.setOnClickListener {
+                    val actions = HomeFragmentDirections.actionHomeFragmentToCountiesFragment(
+                        country = homeFragmentSpinner.selectedItem.toString()
+                    )
+                    findNavController().navigate(actions)
                 }
 
             }
@@ -73,6 +68,5 @@ class HomeFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 
 }

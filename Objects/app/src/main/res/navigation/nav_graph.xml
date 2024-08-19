@@ -20,15 +20,15 @@
             android:id="@+id/action_countiesFragment_to_subCountiesFragment"
             app:destination="@id/subCountiesFragment" />
         <argument
-            android:name="countryId"
-            app:argType="integer" />
+            android:name="country"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/subCountiesFragment"
         android:name="cifor.icraf.objects.feature.ui.fragments.SubCountiesFragment"
         android:label="SubCountiesFragment" >
         <argument
-            android:name="countyId"
+            android:name="countryId"
             app:argType="integer" />
     </fragment>
 </navigation>

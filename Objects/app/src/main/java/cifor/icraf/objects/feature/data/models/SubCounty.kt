@@ -2,7 +2,9 @@ package cifor.icraf.objects.feature.data.models
 
 import cifor.icraf.objects.feature.source.local.entities.SubCountyEntity
 import cifor.icraf.objects.feature.source.mock.model.MockSubCounty
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class SubCounty(
     val subCountyId: Int,
     val subCountyName: String
