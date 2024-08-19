@@ -9,6 +9,8 @@ import cifor.icraf.objects.feature.source.local.entities.SubCountyEntity
 import cifor.icraf.objects.feature.source.remote.source.RemoteSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.withContext
@@ -46,16 +48,29 @@ class LocalSourceImplementation(
         }
     }
 
-    override suspend fun getCountiesById(countryId: Int): List<CountyEntity> {
+    override suspend fun getCountiesById(countryId: Int): CountryEntity? {
         return withContext(context = ioDispatcher) {
-            objectsDao.getAllCountiesById(countryId = countryId)
+            getAllCountries().first().find { it.countryId == countryId }
         }
     }
 
-    override suspend fun getSubCountiesById(countyId: Int): List<SubCountyEntity> {
+    override suspend fun getSubCountiesById(countyId: Int): CountyEntity? {
         return withContext(context = ioDispatcher) {
-            objectsDao.getAllSubCountiesById(countyId = countyId)
+            getAllCountries() // Returns a Flow<List<CountryEntity>>
+                .map { countries ->
+                    countries.flatMap { countryEntity ->
+                        countryEntity.countryCounties // List<CountyEntity>
+                    }
+                }
+                .firstOrNull { countyList ->
+                    countyList.find { countyEntity ->
+                        countyEntity.countyId == countyId
+                    } != null
+                }?.find { countyEntity ->
+                    countyEntity.countyId == countyId
+                }
         }
     }
+
 
 }

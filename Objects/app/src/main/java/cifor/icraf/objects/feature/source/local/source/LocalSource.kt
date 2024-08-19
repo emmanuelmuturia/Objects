@@ -14,8 +14,8 @@ interface LocalSource {
 
     suspend fun upsertCountry(countryEntity: CountryEntity)
 
-    suspend fun getCountiesById(countryId: Int): List<CountyEntity>
+    suspend fun getCountiesById(countryId: Int): CountryEntity?
 
-    suspend fun getSubCountiesById(countyId: Int): List<SubCountyEntity>
+    suspend fun getSubCountiesById(countyId: Int): CountyEntity?
 
 }

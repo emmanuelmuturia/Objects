@@ -1,9 +1,11 @@
 package cifor.icraf.objects.feature.ui.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cifor.icraf.objects.commons.state.NetworkResult
 import cifor.icraf.objects.commons.state.asResult
+import cifor.icraf.objects.feature.data.models.Country
 import cifor.icraf.objects.feature.data.models.County
 import cifor.icraf.objects.feature.data.models.SubCounty
 import cifor.icraf.objects.feature.data.repository.ObjectsRepository
@@ -45,12 +47,20 @@ class ObjectsViewModel(
         }
     }
 
-    suspend fun getCountiesById(countryId: Int): List<County> {
-        return objectsRepository.getCountiesById(countryId = countryId)
+    fun getCountiesById(countryId: Int): Country? {
+        var country: Country? = null
+        viewModelScope.launch {
+            country = objectsRepository.getCountiesById(countryId = countryId)
+        }
+        return country
     }
 
-    suspend fun getSubCountiesById(countyId: Int): List<SubCounty> {
-        return objectsRepository.getSubCountiesById(countyId = countyId)
+    fun getSubCountiesById(countyId: Int): County? {
+        var county: County?= null
+        viewModelScope.launch {
+            county = objectsRepository.getSubCountiesById(countyId = countyId)
+        }
+        return county
     }
 
 }

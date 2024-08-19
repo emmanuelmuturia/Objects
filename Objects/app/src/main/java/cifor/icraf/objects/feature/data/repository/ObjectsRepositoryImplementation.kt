@@ -11,6 +11,8 @@ import cifor.icraf.objects.feature.source.local.source.LocalSource
 import cifor.icraf.objects.feature.source.mock.source.MockSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
 
@@ -61,25 +63,33 @@ class ObjectsRepositoryImplementation(
         )
     }*/
 
-    override suspend fun getCountiesById(countryId: Int): List<County> {
+    override suspend fun getCountiesById(countryId: Int): Country? {
         return withContext(context = ioDispatcher) {
-            localSource.getCountiesById(countryId = countryId).map { countyEntity ->
-                County(
-                    countyId = countyEntity.countyId,
-                    countyName = countyEntity.countyName,
-                    countySubCounties = countyEntity.countySubCounties.map { it.toSubCounty() }
+            val countryEntity = localSource.getCountiesById(countryId = countryId)
+            countryEntity?.let {
+                Country(
+                    countryId = it.countryId,
+                    countryName = countryEntity.countryName,
+                    countryCurrency = countryEntity.countryCurrency,
+                    countryCode = countryEntity.countryCode,
+                    countryCounties = countryEntity.countryCounties.map { it.toCounty() },
+                    countryPhoneCode = countryEntity.countryPhoneCode
                 )
             }
         }
     }
 
-    override suspend fun getSubCountiesById(countyId: Int): List<SubCounty> {
+    override suspend fun getSubCountiesById(countyId: Int): County? {
         return withContext(context = ioDispatcher) {
-            localSource.getSubCountiesById(countyId = countyId).map { subCountyEntity ->
-                SubCounty(
-                    subCountyId = subCountyEntity.subCountyId,
-                    subCountyName = subCountyEntity.subCountyName
-                )
+            val countyEntity = localSource.getSubCountiesById(countyId = countyId)
+            countyEntity.let { myCountyEntity ->
+                myCountyEntity?.let {
+                    County(
+                        countyId = it.countyId,
+                        countyName = myCountyEntity.countyName,
+                        countySubCounties = myCountyEntity.countySubCounties.map { countySubCounties -> countySubCounties.toSubCounty() }
+                    )
+                }
             }
         }
     }

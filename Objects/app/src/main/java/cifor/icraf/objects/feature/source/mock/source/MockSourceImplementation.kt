@@ -150,7 +150,6 @@ class MockSourceImplementation(
     )
 
     override suspend fun getAllMockCountries(): Flow<List<MockCountry>> = flow {
-        delay(timeMillis = 3500)
         emit(value = mockCountries)
     }.flowOn(context = ioDispatcher)
 

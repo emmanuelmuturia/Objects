@@ -11,8 +11,8 @@ interface ObjectsRepository {
 
     //suspend fun upsertCountry(country: Country)
 
-    suspend fun getCountiesById(countryId: Int): List<County>
+    suspend fun getCountiesById(countryId: Int): Country?
 
-    suspend fun getSubCountiesById(countyId: Int): List<SubCounty>
+    suspend fun getSubCountiesById(countyId: Int): County?
 
 }
