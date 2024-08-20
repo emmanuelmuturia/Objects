@@ -10,4 +10,8 @@ interface LocalSource {
 
     suspend fun upsertCountry(countryEntity: CountryEntity)
 
+    suspend fun getCountryByName(countryName: String): CountryEntity?
+
+    suspend fun getSubCountyById(countryId: Int): CountyEntity?
+
 }

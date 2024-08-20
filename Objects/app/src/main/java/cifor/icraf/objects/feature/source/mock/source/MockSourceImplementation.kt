@@ -162,7 +162,7 @@ class MockSourceImplementation(
         }
     }
 
-    override suspend fun getMockSubCountiesById(countryId: Int): MockCounty? {
+    override suspend fun getMockSubCountyById(countryId: Int): MockCounty? {
         return withContext(ioDispatcher) {
             getAllMockCountries()
                 .map { countries ->

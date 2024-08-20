@@ -4,6 +4,7 @@ import cifor.icraf.objects.feature.data.models.Country
 import cifor.icraf.objects.feature.data.models.County
 import cifor.icraf.objects.feature.data.models.toCounty
 import cifor.icraf.objects.feature.data.models.toSubCounty
+import cifor.icraf.objects.feature.source.local.source.LocalSource
 import cifor.icraf.objects.feature.source.mock.source.MockSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
@@ -59,15 +60,15 @@ class ObjectsRepositoryImplementation(
 
     override suspend fun getCountryByName(countryName: String): Country? {
         return withContext(context = ioDispatcher) {
-            /*val countryEntity = localSource.getCountiesByName(countryName = countryName)
-            countryEntity?.let {
+            /*val country = localSource.getCountryByName(countryName = countryName)
+            country?.let { countryEntity ->
                 Country(
-                    countryId = it.countryId,
-                    countryName = it.countryName,
-                    countryCurrency = it.countryCurrency,
-                    countryCode = it.countryCode,
-                    countryCounties = it.countryCounties.map { countyEntity ->  countyEntity.toCounty() },
-                    countryPhoneCode = it.countryPhoneCode
+                    countryId = countryEntity.countryId,
+                    countryName = countryEntity.countryName,
+                    countryCurrency = countryEntity.countryCurrency,
+                    countryCode = countryEntity.countryCode,
+                    countryCounties = countryEntity.countryCounties.map { countyEntity ->  countyEntity.toCounty() },
+                    countryPhoneCode = countryEntity.countryPhoneCode
                 )
             }*/
             val country = mockSource.getMockCountryByName(countryName = countryName)
@@ -86,15 +87,15 @@ class ObjectsRepositoryImplementation(
 
     override suspend fun getSubCountiesById(countryId: Int): County? {
         return withContext(context = ioDispatcher) {
-            /*val countyEntity = localSource.getSubCountiesByName(countyId = countyId)
-            countyEntity?.let {
+            /*val county = localSource.getSubCountyById(countryId = countryId)
+            county?.let { countyEntity ->
                 County(
-                    countyId = it.countyId,
-                    countyName = it.countyName,
-                    countySubCounties = it.countySubCounties.map { countySubCounties -> countySubCounties.toSubCounty() }
+                    countyId = countyEntity.countyId,
+                    countyName = countyEntity.countyName,
+                    countySubCounties = countyEntity.countySubCounties.map { countySubCounties -> countySubCounties.toSubCounty() }
                 )
             }*/
-            val county = mockSource.getMockSubCountiesById(countryId = countryId)
+            val county = mockSource.getMockSubCountyById(countryId = countryId)
             county?.let { mockCounty ->
                 County(
                     countyId = mockCounty.countyId,

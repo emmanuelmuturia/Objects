@@ -46,4 +46,24 @@ class LocalSourceImplementation(
         }
     }
 
+    override suspend fun getCountryByName(countryName: String): CountryEntity? {
+        return withContext(context = ioDispatcher) {
+            getAllCountries().first().find { countryEntity ->
+                countryEntity.countryName == countryName
+            }
+        }
+    }
+
+    override suspend fun getSubCountyById(countryId: Int): CountyEntity? {
+        return withContext(context = ioDispatcher) {
+            getAllCountries().map { countryEntities ->
+                countryEntities.flatMap { countryEntity ->
+                    countryEntity.countryCounties
+                }
+            }.firstOrNull()?.find { countyEntity ->
+                countyEntity.countyId == countryId
+            }
+        }
+    }
+
 }
