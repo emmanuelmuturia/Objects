@@ -11,12 +11,14 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 
 class MockSourceImplementation(
     private val ioDispatcher: CoroutineDispatcher
 ) : MockSource {
 
-    private val mockCountries = listOf(
+    private val mockCountries = Json.encodeToString(value = listOf(
         MockCountry(
             countryCode = "Country Code #1",
             countryCounties = listOf(
@@ -150,10 +152,10 @@ class MockSourceImplementation(
             countryId = 7,
             countryPhoneCode = "Country Phone Code #7"
         ),
-    )
+    ))
 
     override suspend fun getAllMockCountries(): Flow<List<MockCountry>> = flow {
-        emit(value = mockCountries)
+        emit(value = Json.decodeFromString<List<MockCountry>>(string = mockCountries))
     }.flowOn(context = ioDispatcher)
 
     override suspend fun getMockCountryByName(countryName: String): MockCountry? {

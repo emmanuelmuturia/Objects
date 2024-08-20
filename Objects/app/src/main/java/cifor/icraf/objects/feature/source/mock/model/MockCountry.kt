@@ -1,5 +1,8 @@
 package cifor.icraf.objects.feature.source.mock.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class MockCountry(
     val countryCode: String,
     val countryCounties: List<MockCounty>,
