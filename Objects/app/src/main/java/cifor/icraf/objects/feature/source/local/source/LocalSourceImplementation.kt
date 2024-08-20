@@ -3,7 +3,6 @@ package cifor.icraf.objects.feature.source.local.source
 import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.entities.CountryEntity
 import cifor.icraf.objects.feature.source.local.entities.CountyEntity
-import cifor.icraf.objects.feature.source.mock.source.MockSource
 import cifor.icraf.objects.feature.source.remote.source.RemoteSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
