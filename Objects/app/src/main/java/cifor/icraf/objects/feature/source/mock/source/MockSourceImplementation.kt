@@ -65,9 +65,9 @@ class MockSourceImplementation(
                         MockSubCounty(
                             subCountyId = 3,
                             subCountyName = "SubCounty #3"
-                        )
-                    ),
-                )
+                        ),
+                    )
+                ),
             ),
             countryName = "Country #3",
             countryCurrency = "Country Currency #3",
@@ -166,16 +166,16 @@ class MockSourceImplementation(
         return withContext(context = ioDispatcher) {
             getAllMockCountries() // Returns a Flow<List<CountryEntity>>
                 .map { countries ->
-                    countries.flatMap { countryEntity ->
-                        countryEntity.countryCounties // List<CountyEntity>
+                    countries.flatMap { mockCountry ->
+                        mockCountry.countryCounties // List<CountyEntity>
                     }
                 }
                 .firstOrNull { countyList ->
-                    countyList.find { countyEntity ->
-                        countyEntity.countyId == countryId
+                    countyList.find { mockCounty ->
+                        mockCounty.countyId == countryId
                     } != null
-                }?.find { countyEntity ->
-                    countyEntity.countyId == countryId
+                }?.find { mockCounty ->
+                    mockCounty.countyId == countryId
                 }
         }
     }

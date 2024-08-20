@@ -1,7 +1,6 @@
 package cifor.icraf.objects.feature.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,8 +12,6 @@ import androidx.navigation.fragment.findNavController
 import cifor.icraf.objects.databinding.FragmentHomeBinding
 import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.launch
-import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : Fragment() {
