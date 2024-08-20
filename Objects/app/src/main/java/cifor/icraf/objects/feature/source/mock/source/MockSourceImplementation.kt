@@ -156,28 +156,25 @@ class MockSourceImplementation(
         emit(value = mockCountries)
     }.flowOn(context = ioDispatcher)
 
-    override suspend fun getCountryByName(countryName: String): MockCountry? {
+    override suspend fun getMockCountryByName(countryName: String): MockCountry? {
         return withContext(context = ioDispatcher) {
             getAllMockCountries().first().find { it.countryName == countryName }
         }
     }
 
-    override suspend fun getSubCountiesById(countryId: Int): MockCounty? {
-        return withContext(context = ioDispatcher) {
-            getAllMockCountries() // Returns a Flow<List<CountryEntity>>
+    override suspend fun getMockSubCountiesById(countryId: Int): MockCounty? {
+        return withContext(ioDispatcher) {
+            getAllMockCountries()
                 .map { countries ->
                     countries.flatMap { mockCountry ->
-                        mockCountry.countryCounties // List<CountyEntity>
+                        mockCountry.countryCounties
                     }
                 }
-                .firstOrNull { countyList ->
-                    countyList.find { mockCounty ->
-                        mockCounty.countyId == countryId
-                    } != null
-                }?.find { mockCounty ->
+                .firstOrNull()?.find { mockCounty ->
                     mockCounty.countyId == countryId
                 }
         }
     }
+
 
 }

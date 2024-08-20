@@ -70,7 +70,7 @@ class ObjectsRepositoryImplementation(
                     countryPhoneCode = it.countryPhoneCode
                 )
             }*/
-            val country = mockSource.getCountryByName(countryName = countryName)
+            val country = mockSource.getMockCountryByName(countryName = countryName)
             country?.let { mockCountry ->
                 Country(
                     countryId = mockCountry.countryId,
@@ -94,7 +94,7 @@ class ObjectsRepositoryImplementation(
                     countySubCounties = it.countySubCounties.map { countySubCounties -> countySubCounties.toSubCounty() }
                 )
             }*/
-            val county = mockSource.getSubCountiesById(countryId = countryId)
+            val county = mockSource.getMockSubCountiesById(countryId = countryId)
             county?.let { mockCounty ->
                 County(
                     countyId = mockCounty.countyId,

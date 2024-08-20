@@ -8,8 +8,8 @@ interface MockSource {
 
     suspend fun getAllMockCountries(): Flow<List<MockCountry>>
 
-    suspend fun getCountryByName(countryName: String): MockCountry?
+    suspend fun getMockCountryByName(countryName: String): MockCountry?
 
-    suspend fun getSubCountiesById(countryId: Int): MockCounty?
+    suspend fun getMockSubCountiesById(countryId: Int): MockCounty?
 
 }
