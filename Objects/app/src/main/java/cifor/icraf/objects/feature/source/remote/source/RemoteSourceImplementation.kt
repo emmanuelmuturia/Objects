@@ -16,7 +16,7 @@ class RemoteSourceImplementation(
         withContext(context = ioDispatcher) {
             val response = objectsApi.fetchAllCountries()
             if (response.isSuccessful) {
-                response.body()!!.map { countryDTO ->
+                response.body()?.map { countryDTO ->
                     objectsDao.upsertCountryEntity(
                         countryEntity = CountryEntity(
                             countryId = countryDTO.countryId,
