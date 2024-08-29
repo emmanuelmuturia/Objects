@@ -1,8 +1,8 @@
 package cifor.icraf.objects.feature.source.localMock.source
 
-import cifor.icraf.objects.feature.source.localMock.model.MockCountry
-import cifor.icraf.objects.feature.source.localMock.model.MockCounty
-import cifor.icraf.objects.feature.source.localMock.model.MockSubCounty
+import cifor.icraf.objects.feature.source.localMock.model.LocalMockCountry
+import cifor.icraf.objects.feature.source.localMock.model.LocalMockCounty
+import cifor.icraf.objects.feature.source.localMock.model.LocalMockSubCounty
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
@@ -19,14 +19,14 @@ class MockSourceImplementation(
 ) : MockSource {
 
     private val mockCountries = Json.encodeToString(value = listOf(
-        MockCountry(
+        LocalMockCountry(
             countryCode = "Country Code #1",
             countryCounties = listOf(
-                MockCounty(
+                LocalMockCounty(
                     countyName = "County #1",
                     countyId = 1,
                     countySubCounties = listOf(
-                        MockSubCounty(
+                        LocalMockSubCounty(
                             subCountyId = 1,
                             subCountyName = "SubCounty #1"
                         )
@@ -38,14 +38,14 @@ class MockSourceImplementation(
             countryId = 1,
             countryPhoneCode = "Country Phone Code #1"
         ),
-        MockCountry(
+        LocalMockCountry(
             countryCode = "Country Code #2",
             countryCounties = listOf(
-                MockCounty(
+                LocalMockCounty(
                     countyName = "County #2",
                     countyId = 2,
                     countySubCounties = listOf(
-                        MockSubCounty(
+                        LocalMockSubCounty(
                             subCountyId = 2,
                             subCountyName = "SubCounty #2"
                         )
@@ -57,14 +57,14 @@ class MockSourceImplementation(
             countryId = 2,
             countryPhoneCode = "Country Phone Code #2"
         ),
-        MockCountry(
+        LocalMockCountry(
             countryCode = "Country Code #3",
             countryCounties = listOf(
-                MockCounty(
+                LocalMockCounty(
                     countyName = "County #3",
                     countyId = 3,
                     countySubCounties = listOf(
-                        MockSubCounty(
+                        LocalMockSubCounty(
                             subCountyId = 3,
                             subCountyName = "SubCounty #3"
                         ),
@@ -76,14 +76,14 @@ class MockSourceImplementation(
             countryId = 3,
             countryPhoneCode = "Country Phone Code #3"
         ),
-        MockCountry(
+        LocalMockCountry(
             countryCode = "Country Code #4",
             countryCounties = listOf(
-                MockCounty(
+                LocalMockCounty(
                     countyName = "County #4",
                     countyId = 4,
                     countySubCounties = listOf(
-                        MockSubCounty(
+                        LocalMockSubCounty(
                             subCountyId = 4,
                             subCountyName = "SubCounty #4"
                         )
@@ -95,14 +95,14 @@ class MockSourceImplementation(
             countryId = 4,
             countryPhoneCode = "Country Phone Code #4"
         ),
-        MockCountry(
+        LocalMockCountry(
             countryCode = "Country Code #5",
             countryCounties = listOf(
-                MockCounty(
+                LocalMockCounty(
                     countyName = "County #5",
                     countyId = 5,
                     countySubCounties = listOf(
-                        MockSubCounty(
+                        LocalMockSubCounty(
                             subCountyId = 5,
                             subCountyName = "SubCounty #5"
                         )
@@ -114,14 +114,14 @@ class MockSourceImplementation(
             countryId = 5,
             countryPhoneCode = "Country Phone Code #5"
         ),
-        MockCountry(
+        LocalMockCountry(
             countryCode = "Country Code #6",
             countryCounties = listOf(
-                MockCounty(
+                LocalMockCounty(
                     countyName = "County #6",
                     countyId = 6,
                     countySubCounties = listOf(
-                        MockSubCounty(
+                        LocalMockSubCounty(
                             subCountyId = 6,
                             subCountyName = "SubCounty #6"
                         )
@@ -133,14 +133,14 @@ class MockSourceImplementation(
             countryId = 6,
             countryPhoneCode = "Country Phone Code #6"
         ),
-        MockCountry(
+        LocalMockCountry(
             countryCode = "Country Code #7",
             countryCounties = listOf(
-                MockCounty(
+                LocalMockCounty(
                     countyName = "County #7",
                     countyId = 7,
                     countySubCounties = listOf(
-                        MockSubCounty(
+                        LocalMockSubCounty(
                             subCountyId = 7,
                             subCountyName = "SubCounty #7"
                         )
@@ -154,17 +154,17 @@ class MockSourceImplementation(
         ),
     ))
 
-    override suspend fun getAllMockCountries(): Flow<List<MockCountry>> = flow {
-        emit(value = Json.decodeFromString<List<MockCountry>>(string = mockCountries))
+    override suspend fun getAllMockCountries(): Flow<List<LocalMockCountry>> = flow {
+        emit(value = Json.decodeFromString<List<LocalMockCountry>>(string = mockCountries))
     }.flowOn(context = ioDispatcher)
 
-    override suspend fun getMockCountryByName(countryName: String): MockCountry? {
+    override suspend fun getMockCountryByName(countryName: String): LocalMockCountry? {
         return withContext(context = ioDispatcher) {
             getAllMockCountries().first().find { it.countryName == countryName }
         }
     }
 
-    override suspend fun getMockSubCountyById(countryId: Int): MockCounty? {
+    override suspend fun getMockSubCountyById(countryId: Int): LocalMockCounty? {
         return withContext(ioDispatcher) {
             getAllMockCountries()
                 .map { countries ->

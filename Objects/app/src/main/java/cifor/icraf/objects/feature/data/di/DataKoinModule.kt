@@ -5,6 +5,7 @@ import cifor.icraf.objects.feature.data.repository.ObjectsRepositoryImplementati
 import cifor.icraf.objects.feature.source.local.di.localSourceKoinModule
 import cifor.icraf.objects.feature.source.localMock.di.mockSourceKoinModule
 import cifor.icraf.objects.feature.source.remote.di.remoteSourceKoinModule
+import cifor.icraf.objects.feature.source.remoteMock.di.remoteMockKoinModule
 import org.koin.dsl.module
 
 val dataKoinModule = module {
@@ -20,6 +21,7 @@ val dataKoinModule = module {
     includes(module = listOf(
         remoteSourceKoinModule,
         localSourceKoinModule,
-        mockSourceKoinModule))
+        mockSourceKoinModule,
+        remoteMockKoinModule))
 
 }
