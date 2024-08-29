@@ -1,4 +1,4 @@
-package cifor.icraf.objects.feature.source.mock.model
+package cifor.icraf.objects.feature.source.localMock.model
 
 import kotlinx.serialization.Serializable
 

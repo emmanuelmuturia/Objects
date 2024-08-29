@@ -1,8 +1,8 @@
-package cifor.icraf.objects.feature.source.mock.source
+package cifor.icraf.objects.feature.source.localMock.source
 
-import cifor.icraf.objects.feature.source.mock.model.MockCountry
-import cifor.icraf.objects.feature.source.mock.model.MockCounty
-import cifor.icraf.objects.feature.source.mock.model.MockSubCounty
+import cifor.icraf.objects.feature.source.localMock.model.MockCountry
+import cifor.icraf.objects.feature.source.localMock.model.MockCounty
+import cifor.icraf.objects.feature.source.localMock.model.MockSubCounty
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first

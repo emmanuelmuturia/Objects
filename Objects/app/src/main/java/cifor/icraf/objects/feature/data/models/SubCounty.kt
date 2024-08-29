@@ -1,7 +1,7 @@
 package cifor.icraf.objects.feature.data.models
 
 import cifor.icraf.objects.feature.source.local.entities.SubCountyEntity
-import cifor.icraf.objects.feature.source.mock.model.MockSubCounty
+import cifor.icraf.objects.feature.source.localMock.model.MockSubCounty
 import kotlinx.serialization.Serializable
 
 @Serializable
