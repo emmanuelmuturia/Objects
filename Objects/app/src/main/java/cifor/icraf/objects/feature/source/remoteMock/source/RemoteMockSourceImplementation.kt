@@ -1,5 +1,6 @@
 package cifor.icraf.objects.feature.source.remoteMock.source
 
+import android.util.Log
 import cifor.icraf.objects.feature.source.remoteMock.model.RemoteMockCountry
 import cifor.icraf.objects.feature.source.remoteMock.model.RemoteMockCounty
 import kotlinx.coroutines.CoroutineDispatcher
@@ -9,9 +10,14 @@ import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
+import kotlinx.serialization.json.Json
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okio.IOException
 
 class RemoteMockSourceImplementation(
-    private val ioDispatcher: CoroutineDispatcher
+    private val ioDispatcher: CoroutineDispatcher,
+    private val okHttpClient: OkHttpClient
 ) : RemoteMockSource {
 
     override suspend fun getRemoteMockCountries(): Flow<List<RemoteMockCountry>> = flow {
@@ -22,6 +28,13 @@ class RemoteMockSourceImplementation(
         4. Deserialise the JSON String to match the Serializable Data Classes...
         5. Emit the result...
          */
+        val networkRequest = Request.Builder()
+            .url(url = "https://filesdownload.thegrit.earth/countries.json").build()
+        okHttpClient.newCall(request = networkRequest).execute().use { networkResponse ->
+            if (!networkResponse.isSuccessful) throw IOException("Unexpected Response: $networkResponse")
+            val listOfCountries = Json.decodeFromString<List<RemoteMockCountry>>(string = networkResponse.body.toString())
+            emit(value = listOfCountries)
+        }
     }
 
     override suspend fun getMockCountryByName(countryName: String): RemoteMockCountry? {

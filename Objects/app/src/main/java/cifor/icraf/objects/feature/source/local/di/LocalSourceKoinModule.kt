@@ -27,7 +27,8 @@ val localSourceKoinModule = module {
             objectsDao = get(),
             ioDispatcher = get(),
             remoteSource = get(),
-            //mockSource = get()
+            //mockSource = get(),
+            remoteMockSource = get()
         )
     }
 

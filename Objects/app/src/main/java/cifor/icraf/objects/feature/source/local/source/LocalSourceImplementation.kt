@@ -4,6 +4,7 @@ import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.entities.CountryEntity
 import cifor.icraf.objects.feature.source.local.entities.CountyEntity
 import cifor.icraf.objects.feature.source.remote.source.RemoteSource
+import cifor.icraf.objects.feature.source.remoteMock.source.RemoteMockSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
@@ -16,6 +17,7 @@ class LocalSourceImplementation(
     private val objectsDao: ObjectsDao,
     private val ioDispatcher: CoroutineDispatcher,
     private val remoteSource: RemoteSource,
+    private val remoteMockSource: RemoteMockSource
 ) : LocalSource {
 
     override suspend fun getAllCountries(): Flow<List<CountryEntity>> {
@@ -34,7 +36,8 @@ class LocalSourceImplementation(
             }
         }.onEach {
             if (it.isEmpty()) {
-                remoteSource.fetchAllCountries()
+                //remoteSource.fetchAllCountries()
+                remoteMockSource.getRemoteMockCountries()
             }
         }
     }
