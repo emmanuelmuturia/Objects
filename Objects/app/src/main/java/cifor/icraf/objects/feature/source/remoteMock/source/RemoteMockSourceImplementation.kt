@@ -1,6 +1,5 @@
 package cifor.icraf.objects.feature.source.remoteMock.source
 
-import android.util.Log
 import cifor.icraf.objects.feature.source.remoteMock.model.RemoteMockCountry
 import cifor.icraf.objects.feature.source.remoteMock.model.RemoteMockCounty
 import kotlinx.coroutines.CoroutineDispatcher
@@ -21,13 +20,6 @@ class RemoteMockSourceImplementation(
 ) : RemoteMockSource {
 
     override suspend fun getRemoteMockCountries(): Flow<List<RemoteMockCountry>> = flow {
-        /*
-        1. Download the file...
-        2. Retrieve the file...
-        3. Parse the file and get the JSON String...
-        4. Deserialise the JSON String to match the Serializable Data Classes...
-        5. Emit the result...
-         */
         val networkRequest = Request.Builder()
             .url(url = "https://filesdownload.thegrit.earth/countries.json").build()
         okHttpClient.newCall(request = networkRequest).execute().use { networkResponse ->
