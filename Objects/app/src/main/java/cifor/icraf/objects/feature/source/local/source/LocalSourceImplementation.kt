@@ -16,7 +16,7 @@ import kotlinx.coroutines.withContext
 class LocalSourceImplementation(
     private val objectsDao: ObjectsDao,
     private val ioDispatcher: CoroutineDispatcher,
-    private val remoteSource: RemoteSource,
+    //private val remoteSource: RemoteSource,
     private val remoteMockSource: RemoteMockSource
 ) : LocalSource {
 

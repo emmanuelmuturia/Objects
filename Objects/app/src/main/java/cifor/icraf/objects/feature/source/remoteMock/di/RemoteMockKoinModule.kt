@@ -14,7 +14,8 @@ val remoteMockKoinModule = module {
     single<RemoteMockSource> {
         RemoteMockSourceImplementation(
             ioDispatcher = get(),
-            okHttpClient = get()
+            okHttpClient = get(),
+            objectsDao = get()
         )
     }
 

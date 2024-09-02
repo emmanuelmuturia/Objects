@@ -8,8 +8,6 @@ interface ObjectsRepository {
 
     suspend fun getAllCountries(): Flow<List<Country>>
 
-    //suspend fun upsertCountry(country: Country)
-
     suspend fun getCountryByName(countryName: String): Country?
 
     suspend fun getSubCountiesById(countryId: Int): County?
