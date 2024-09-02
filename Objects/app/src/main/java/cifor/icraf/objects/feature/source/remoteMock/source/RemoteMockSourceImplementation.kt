@@ -1,5 +1,6 @@
 package cifor.icraf.objects.feature.source.remoteMock.source
 
+import android.util.Log
 import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.entities.CountryEntity
 import cifor.icraf.objects.feature.source.remoteMock.model.RemoteMockCountry
@@ -35,7 +36,7 @@ class RemoteMockSourceImplementation(
                         if (!networkResponse.isSuccessful) {
                             throw IOException("Unexpected Response: $networkResponse")
                         } else {
-                            val listOfCountries = Json.decodeFromString<List<RemoteMockCountry>>(string = networkResponse.body.toString())
+                            val listOfCountries = Json.decodeFromString<List<RemoteMockCountry>>(string = networkResponse.body!!.string())
                             listOfCountries.map { remoteMockCountry ->
                                 objectsDao.upsertCountryEntity(
                                     countryEntity = CountryEntity(
