@@ -62,7 +62,6 @@ class CountiesFragment : Fragment() {
                 }
             }
         }
-
         return binding.root
     }
 

@@ -61,7 +61,7 @@ class ObjectsViewModel(
         }
     }
 
-    fun getSubCountyByName(countyName: String) {
+    fun getCountyByName(countyName: String) {
         viewModelScope.launch {
             _county.update {
                 objectsRepository.getCountyByName(countyName = countyName)

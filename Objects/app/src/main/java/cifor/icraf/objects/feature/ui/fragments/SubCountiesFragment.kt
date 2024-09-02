@@ -26,7 +26,6 @@ class SubCountiesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentSubCountiesBinding.inflate(
             inflater,
             container,
@@ -34,7 +33,7 @@ class SubCountiesFragment : Fragment() {
         )
 
         val countyName = SubCountiesFragmentArgs.fromBundle(bundle = requireArguments()).countyName
-        objectsViewModel.getSubCountyByName(countyName = countyName)
+        objectsViewModel.getCountyByName(countyName = countyName)
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(state = Lifecycle.State.STARTED) {
@@ -42,11 +41,11 @@ class SubCountiesFragment : Fragment() {
                     if (county != null) {
                         val subCountiesFragmentSpinner = binding.subCountiesFragmentSpinner
                         subCountiesFragmentSpinner.adapter =
-                                ArrayAdapter(
-                                    requireContext(),
-                                    android.R.layout.simple_spinner_dropdown_item,
-                                    county.countySubCounties.map { it.subCountyName }
-                                )
+                            ArrayAdapter(
+                                requireContext(),
+                                android.R.layout.simple_spinner_dropdown_item,
+                                county.countySubCounties.map { it.subCountyName }
+                            )
                     }
                 }
             }
