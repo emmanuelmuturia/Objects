@@ -1,6 +1,6 @@
 package cifor.icraf.objects.feature.source.remote.source
 
-interface RemoteSource {
+fun interface RemoteSource {
 
     suspend fun fetchAllCountries()
 

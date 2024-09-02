@@ -2,20 +2,26 @@ package cifor.icraf.objects.feature.data.di
 
 import cifor.icraf.objects.feature.data.repository.ObjectsRepository
 import cifor.icraf.objects.feature.data.repository.ObjectsRepositoryImplementation
-import cifor.icraf.objects.feature.source.local.room.di.localSourceKoinModule
+import cifor.icraf.objects.feature.source.local.di.localSourceKoinModule
+import cifor.icraf.objects.feature.source.localMock.di.mockSourceKoinModule
 import cifor.icraf.objects.feature.source.remote.di.remoteSourceKoinModule
+import cifor.icraf.objects.feature.source.remoteMock.di.remoteMockKoinModule
 import org.koin.dsl.module
 
 val dataKoinModule = module {
 
     single<ObjectsRepository> {
         ObjectsRepositoryImplementation(
-            localSource = get(),
             ioDispatcher = get(),
-            remoteSource = get()
+            localSource = get(),
+            //mockSource = get()
         )
     }
 
-    includes(listOf(remoteSourceKoinModule, localSourceKoinModule))
+    includes(module = listOf(
+        remoteSourceKoinModule,
+        localSourceKoinModule,
+        mockSourceKoinModule,
+        remoteMockKoinModule))
 
 }

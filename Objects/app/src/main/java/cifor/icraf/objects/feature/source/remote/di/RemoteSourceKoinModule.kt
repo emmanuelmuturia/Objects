@@ -26,7 +26,7 @@ val remoteSourceKoinModule = module {
             .addConverterFactory(
                 json.asConverterFactory(contentType = "application/json".toMediaType())
             )
-            // .baseUrl("https://api.restful-api.dev/") Insert the Base URL of Muhammad's REST API...
+            .baseUrl("https://jsonplaceholder.typicode.com")
             .build()
     }
 
@@ -37,7 +37,8 @@ val remoteSourceKoinModule = module {
     single<RemoteSource> {
         RemoteSourceImplementation(
             objectsApi = get(),
-            ioDispatcher = get()
+            ioDispatcher = get(),
+            objectsDao = get()
         )
     }
 

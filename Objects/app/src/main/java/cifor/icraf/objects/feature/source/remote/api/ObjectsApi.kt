@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface ObjectsApi {
 
-   @GET(value = "")
+   @GET(value = "/posts")
    suspend fun fetchAllCountries(): Response<List<CountryDTO>>
 
 }

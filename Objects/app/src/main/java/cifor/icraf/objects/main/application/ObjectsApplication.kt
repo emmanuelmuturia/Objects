@@ -1,8 +1,8 @@
 package cifor.icraf.objects.main.application
 
 import android.app.Application
+import cifor.icraf.objects.BuildConfig
 import cifor.icraf.objects.feature.ui.di.uiKoinModule
-import com.squareup.leakcanary.core.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import timber.log.Timber

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="cifor.icraf.objects.HomeFragmentTest" tests="1" failures="0" errors="0" skipped="0" time="2.61" timestamp="2024-07-19T10:59:22" hostname="localhost">
-  <properties>
-    <property name="device" value="CIFOR-ICRAF(AVD) - 14" />
-    <property name="flavor" value="" />
-    <property name="project" value=":app" />
-  </properties>
-  <testcase name="homeFragmentToolbarBarIsVisible" classname="cifor.icraf.objects.HomeFragmentTest" time="0.852" />
-</testsuite>
