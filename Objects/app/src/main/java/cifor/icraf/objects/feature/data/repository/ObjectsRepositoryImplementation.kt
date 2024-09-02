@@ -48,14 +48,14 @@ class ObjectsRepositoryImplementation(
         }
     }
 
-    override suspend fun getSubCountiesById(countryId: Int): County? {
+    override suspend fun getCountyByName(countyName: String): County? {
         return withContext(context = ioDispatcher) {
-            val county = localSource.getSubCountyById(countryId = countryId)
+            val county = localSource.getCountyByName(countyName = countyName)
             county?.let { countyEntity ->
                 County(
                     countyId = countyEntity.countyId,
                     countyName = countyEntity.countyName,
-                    countySubCounties = countyEntity.countySubCounties.map { countySubCounties -> countySubCounties.toSubCounty() }
+                    countySubCounties = countyEntity.countySubCounties.map { it.toSubCounty() }
                 )
             }
         }

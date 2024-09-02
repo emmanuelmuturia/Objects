@@ -28,7 +28,7 @@
         android:name="cifor.icraf.objects.feature.ui.fragments.SubCountiesFragment"
         android:label="SubCountiesFragment" >
         <argument
-            android:name="countryId"
-            app:argType="integer" />
+            android:name="countyName"
+            app:argType="string" />
     </fragment>
 </navigation>

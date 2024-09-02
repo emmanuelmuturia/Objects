@@ -12,6 +12,6 @@ interface LocalSource {
 
     suspend fun getCountryByName(countryName: String): CountryEntity?
 
-    suspend fun getSubCountyById(countryId: Int): CountyEntity?
+    suspend fun getCountyByName(countyName: String): CountyEntity?
 
 }

@@ -32,6 +32,8 @@ class CountiesFragment : Fragment() {
             false
         )
 
+        val countiesFragmentSpinner = binding.countiesFragmentSpinner
+
         val countryName = CountiesFragmentArgs.fromBundle(bundle = requireArguments()).country
         objectsViewModel.getCountryByName(countryName = countryName)
 
@@ -39,7 +41,6 @@ class CountiesFragment : Fragment() {
             viewLifecycleOwner.repeatOnLifecycle(state = Lifecycle.State.STARTED) {
                 objectsViewModel.country.collect { country ->
                     if (country != null) {
-                        val countiesFragmentSpinner = binding.countiesFragmentSpinner
                         countiesFragmentSpinner.adapter =
                             ArrayAdapter(
                                 requireContext(),
@@ -49,7 +50,7 @@ class CountiesFragment : Fragment() {
 
                         binding.homeFragmentNextButton.setOnClickListener {
                             val action = CountiesFragmentDirections.actionCountiesFragmentToSubCountiesFragment(
-                                countryId = country.countryId
+                                countyName = countiesFragmentSpinner.selectedItem.toString()
                             )
                             findNavController().navigate(action)
                         }

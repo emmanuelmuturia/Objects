@@ -33,8 +33,8 @@ class SubCountiesFragment : Fragment() {
             false
         )
 
-        val countyId = SubCountiesFragmentArgs.fromBundle(bundle = requireArguments()).countryId
-        objectsViewModel.getSubCountiesById(countryId = countyId)
+        val countyName = SubCountiesFragmentArgs.fromBundle(bundle = requireArguments()).countyName
+        objectsViewModel.getSubCountyByName(countyName = countyName)
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(state = Lifecycle.State.STARTED) {

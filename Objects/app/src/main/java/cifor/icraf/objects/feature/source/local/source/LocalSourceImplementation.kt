@@ -56,14 +56,18 @@ class LocalSourceImplementation(
         }
     }
 
-    override suspend fun getSubCountyById(countryId: Int): CountyEntity? {
+    override suspend fun getCountyByName(countyName: String): CountyEntity? {
         return withContext(context = ioDispatcher) {
-            getAllCountries().map { countryEntities ->
-                countryEntities.flatMap { countryEntity ->
+            getAllCountries().map { listOfCountryEntities ->
+                listOfCountryEntities.flatMap { countryEntity ->
                     countryEntity.countryCounties
                 }
-            }.firstOrNull()?.find { countyEntity ->
-                countyEntity.countyId == countryId
+            }.firstOrNull { countyEntities ->
+                countyEntities.any { countyEntity ->
+                    countyEntity.countyName == countyName
+                }
+            }?.firstOrNull { countyEntity ->
+                countyEntity.countyName == countyName
             }
         }
     }

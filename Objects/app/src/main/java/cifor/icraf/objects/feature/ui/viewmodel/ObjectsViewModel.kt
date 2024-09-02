@@ -61,10 +61,10 @@ class ObjectsViewModel(
         }
     }
 
-    fun getSubCountiesById(countryId: Int) {
+    fun getSubCountyByName(countyName: String) {
         viewModelScope.launch {
             _county.update {
-                objectsRepository.getSubCountiesById(countryId = countryId)
+                objectsRepository.getCountyByName(countyName = countyName)
             }
         }
     }
