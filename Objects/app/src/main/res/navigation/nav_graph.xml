@@ -20,7 +20,7 @@
             android:id="@+id/action_countiesFragment_to_subCountiesFragment"
             app:destination="@id/subCountiesFragment" />
         <argument
-            android:name="country"
+            android:name="countryName"
             app:argType="string" />
     </fragment>
     <fragment

@@ -48,7 +48,7 @@ class HomeFragment : Fragment() {
 
                 binding.homeFragmentNextButton.setOnClickListener {
                     val actions = HomeFragmentDirections.actionHomeFragmentToCountiesFragment(
-                        country = homeFragmentSpinner.selectedItem.toString()
+                        countryName = homeFragmentSpinner.selectedItem.toString()
                     )
                     findNavController().navigate(actions)
                 }

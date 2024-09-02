@@ -34,7 +34,7 @@ class CountiesFragment : Fragment() {
 
         val countiesFragmentSpinner = binding.countiesFragmentSpinner
 
-        val countryName = CountiesFragmentArgs.fromBundle(bundle = requireArguments()).country
+        val countryName = CountiesFragmentArgs.fromBundle(bundle = requireArguments()).countryName
         objectsViewModel.getCountryByName(countryName = countryName)
 
         viewLifecycleOwner.lifecycleScope.launch {
