@@ -13,6 +13,6 @@ interface ObjectsDao {
     fun getAllCountries(): Flow<List<CountryEntity>>
 
     @Upsert
-    suspend fun upsertCountryEntity(countryEntity: CountryEntity)
+    fun upsertCountryEntity(countryEntity: CountryEntity)
 
 }
