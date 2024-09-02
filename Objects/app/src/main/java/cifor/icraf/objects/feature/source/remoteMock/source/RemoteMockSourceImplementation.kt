@@ -40,7 +40,6 @@ class RemoteMockSourceImplementation(
                         )
                     }
                 }
-                Log.d("List of Countries", "$listOfCountries")
             }
         }
     }
