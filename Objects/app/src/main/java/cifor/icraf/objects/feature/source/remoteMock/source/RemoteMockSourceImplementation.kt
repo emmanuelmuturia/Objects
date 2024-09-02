@@ -1,6 +1,5 @@
 package cifor.icraf.objects.feature.source.remoteMock.source
 
-import android.util.Log
 import cifor.icraf.objects.feature.source.local.dao.ObjectsDao
 import cifor.icraf.objects.feature.source.local.entities.CountryEntity
 import cifor.icraf.objects.feature.source.remoteMock.model.RemoteMockCountry
