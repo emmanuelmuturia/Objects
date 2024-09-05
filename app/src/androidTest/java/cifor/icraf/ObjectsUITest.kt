@@ -15,7 +15,6 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(value = AndroidJUnit4::class)
-@LargeTest
 class ObjectsUITest {
 
     @Test

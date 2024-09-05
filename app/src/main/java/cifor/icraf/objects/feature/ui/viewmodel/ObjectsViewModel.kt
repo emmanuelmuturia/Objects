@@ -2,7 +2,7 @@ package cifor.icraf.objects.feature.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import cifor.icraf.objects.commons.state.NetworkResult
+import cifor.icraf.objects.commons.state.ObjectsNetworkResult
 import cifor.icraf.objects.commons.state.asResult
 import cifor.icraf.objects.feature.data.models.Country
 import cifor.icraf.objects.feature.data.models.County
@@ -36,13 +36,13 @@ class ObjectsViewModel(
             objectsRepository.getAllCountries().asResult().collect { result ->
                 when (result) {
 
-                    is NetworkResult.Success -> {
+                    is ObjectsNetworkResult.Success -> {
                         objectsUIState.update {
                             it.copy(isLoading = false, objects = result.data)
                         }
                     }
 
-                    is NetworkResult.Error -> {
+                    is ObjectsNetworkResult.Error -> {
                         objectsUIState.update {
                             it.copy(isLoading = false, error = result.error)
                         }
