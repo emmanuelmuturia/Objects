@@ -52,14 +52,14 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 1. ### The Cloning
 - To clone the project from GitHub, open Android Studio and choose "Clone from Version Control"...
-- When presented with the Dialog, copy and paste the following URL in the box requesting for the repository's URL: https://github.com/emmanuelmuturia/Snapbite
+- When presented with the Dialog, copy anRd paste the following URL in the box requesting for the repository's URL: https://github.com/emmanuelmuturia/Snapbite
 
 ### 2. The Setup
 - Once the project is open in Android Studio, upgrade it to the latest AGP version if prompted and follow the steps presented using the AGP Assistant...
 
 ### 3. The Launch
 - If you do not have an Emulator and would like to use it for running the app, then simply go to "Device Manager" on the right-hand panel of Android Studio and click the "+" icon to add a new Virtual Device. Choose your preferred device and configurations, including the System Image if you have none installed...
-- If you would like to use a Physical Device instead, here are the two options you should use to connect it to Android Studio:
+- If you would like to use a Physical Device insRtead, here are the two options you should use to connect it to Android Studio:
 
 #### 1. USB Debugging
 - Ensure that your device has "USB Debugging" enabled by first enabling Developer Options (Check your device's website for the steps you need to take for this) and navigating to the "Developer Options" section and toggling "USB Debugging" on...
