@@ -76,11 +76,13 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 | Test | Description |
 |------|-------------|
-|       | This is the ViewModel Test... |
-|       | This is the DAO Test... |
-|        | This is the UI Test... |
+| <img width="1018" alt="The ViewModel Test" src="https://github.com/user-attachments/assets/f46b7a32-a94a-40a7-944f-d35011e507a9"> | This is the ViewModel Test... |
+| <img width="855" alt="The DAO Test" src="https://github.com/user-attachments/assets/83c43735-c048-49c8-a2bc-216c53c7d019"> | This is the DAO Test... |
+| <img width="855" alt="The UI Tests" src="https://github.com/user-attachments/assets/4aa7e70e-f9e0-4fe7-9bf0-6b0d1d25d7a6"> | These are the UI Tests... |
 
 ## Demo
+
+[The Demo.webm](https://github.com/user-attachments/assets/6d8e767d-a076-4ab5-92a8-be61794771c7)
 
 ## Credits
 
