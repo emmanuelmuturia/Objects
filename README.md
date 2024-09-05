@@ -32,6 +32,19 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 ## Project Structure
 
+- Objects has one module (:app) that is divided into the following packages:
+
+### i) commons
+
+- This package contains the Screen States of the app based on the Network Result...
+
+### ii) feature
+
+- This package mocks the conventional :feature module in a modularised project and is divided into: ui (It contains the UI Elements such as Fragments and the ViewModel), data (It abstracts the UI Layer from the Data Sources), and source (It contains both the Local and Remote Data Sources...)...
+
+### iii) main
+
+- This package contains the Application Class (Dependency Injection) and MainActivity (Entry Point of The App)...
 
 ## Procedure
 
