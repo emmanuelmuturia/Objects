@@ -74,11 +74,11 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 ## Tests
 
-| Test | Description |
-|------|-------------|
-|       | This is the ViewModel Test... |
-|       | This is the DAO Test... |
-|        | This is the UI Test... |
+| Test                                                 | Description                   |
+|------------------------------------------------------|-------------------------------|
+| ![The ViewModel Test](assets/The ViewModel Test.png) | This is the ViewModel Test... |
+| ![The DAO Test](assets/The DAO Test.png)             | This is the DAO Test...       |
+| ![The UI Tests](assets/The UI Tests.png)             | These are the UI Tests...     |
 
 ## Demo
 
