@@ -82,7 +82,7 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 ## Demo
 
-![The Demo](assets/demo/demo.webm)
+[The Demo](assets/demo/demo.webm)
 
 ## Credits
 
