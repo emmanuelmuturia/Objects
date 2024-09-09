@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -32,6 +33,10 @@ class CountiesFragment : Fragment() {
             false
         )
 
+        if (activity is AppCompatActivity) {
+            (activity as AppCompatActivity).setSupportActionBar(binding.countiesFragmentToolBar)
+        }
+
         val countiesFragmentSpinner = binding.countiesFragmentSpinner
 
         val countryName = CountiesFragmentArgs.fromBundle(bundle = requireArguments()).countryName
@@ -48,7 +53,7 @@ class CountiesFragment : Fragment() {
                                 country.countryCounties.map { it.countyName }
                             )
 
-                        binding.homeFragmentNextButton.setOnClickListener {
+                        binding.countiesFragmentNextButton.setOnClickListener {
                             val action = CountiesFragmentDirections.actionCountiesFragmentToSubCountiesFragment(
                                 countyName = countiesFragmentSpinner.selectedItem.toString()
                             )
