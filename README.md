@@ -4,13 +4,13 @@ Objects is an Android application that was built to test the feasibility of a JS
 
 ## Table of Contents
 
-1. [Background](#Background)
-2. [Requirements](#Requirements)
-3. [Project Structure](#Structure)
-4. [Procedure](#Procedure)
-5. [Tests](#Tests)
-6. [Demo](#Demo)
-7. [Credits](#Credits)
+1. [Background](#background)
+2. [Requirements](#requirements)
+3. [Project Structure](#project-structure)
+4. [Procedure](#procedure)
+5. [Tests](#tests)
+6. [Demo](#demo)
+7. [Credits](#credits)
 
 ## Background
 
