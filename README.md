@@ -82,6 +82,8 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 ## Demo
 
+![The Demo](assets/demo/demo.webm)
+
 ## Credits
 
 - This project has been developed and supported by the following Tools, Technologies, and Libraries:
