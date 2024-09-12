@@ -9,7 +9,7 @@ Objects is an Android application that was built to test the feasibility of a JS
 3. [Project Structure](#project-structure)
 4. [Procedure](#procedure)
 5. [Tests](#tests)
-6. [Demo](#demo)
+6. [Screenshots](#screenshots)
 7. [Credits](#credits)
 
 ## Background
@@ -80,7 +80,13 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 | ![The DAO Test](assets/test_screenshots/dao_test.png)             | This is the DAO Test...       |
 | ![The UI Tests](assets/test_screenshots/ui_tests.png)             | These are the UI Tests...     |
 
-## Demo
+## Screenshots
+
+|                           Screenshot #1                           |                           Screenshot #2                           |                           Screenshot #3                           |
+|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|
+| ![Screenshot #1](assets/app_screenshots/objects_screenshot_1.png) | ![Screenshot #2](assets/app_screenshots/objects_screenshot_2.png) | ![Screenshot #3](assets/app_screenshots/objects_screenshot_3.png) |
+
+### Demo
 
 [The Demo](assets/demo/demo.webm)
 
