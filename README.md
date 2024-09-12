@@ -82,9 +82,9 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 ## Screenshots
 
-| ![Screenshot #1](assets/app_screenshots/objects_screenshot_1.png) | ![Screenshot #2](assets/app_screenshots/objects_screenshot_2.png) | ![Screenshot #3](assets/app_screenshots/objects_screenshot_3.png) |
-|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|
 |                           Screenshot #1                           |                           Screenshot #2                           |                           Screenshot #3                           |
+|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|
+| ![Screenshot #1](assets/app_screenshots/objects_screenshot_1.png) | ![Screenshot #2](assets/app_screenshots/objects_screenshot_2.png) | ![Screenshot #3](assets/app_screenshots/objects_screenshot_3.png) |
 
 ### Demo
 
