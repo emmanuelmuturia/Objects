@@ -11,7 +11,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import cifor.icraf.objects.R
-import cifor.icraf.objects.feature.ui.fragments.CountriesFragment
+import cifor.icraf.objects.feature.ui.fragments.HomeFragment
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -20,7 +20,7 @@ class ObjectsUITest {
 
     @Test
     fun testHomeFragmentToolBar() {
-        launchFragmentInContainer<CountriesFragment>(
+        launchFragmentInContainer<HomeFragment>(
             themeResId = R.style.AppTheme
         )
         onView(withId(R.id.homeFragmentToolBar)).check(matches(isDisplayed()))
@@ -28,7 +28,7 @@ class ObjectsUITest {
 
     @Test
     fun testHomeFragmentToolBarText() {
-        launchFragmentInContainer<CountriesFragment>(
+        launchFragmentInContainer<HomeFragment>(
             themeResId = R.style.AppTheme
         )
         onView(withId(R.id.homeFragmentToolBar)).check(matches(hasDescendant(withText(R.string.app_name))))
@@ -36,7 +36,7 @@ class ObjectsUITest {
 
     @Test
     fun testHomeFragmentSpinnerExists() {
-        launchFragmentInContainer<CountriesFragment>(
+        launchFragmentInContainer<HomeFragment>(
             themeResId = R.style.AppTheme
         )
         onView(withId(R.id.homeFragmentSpinner)).check(matches(isDisplayed()))
@@ -44,7 +44,7 @@ class ObjectsUITest {
 
     @Test
     fun testHomeFragmentSpinnerIsClickable() {
-        launchFragmentInContainer<CountriesFragment>(
+        launchFragmentInContainer<HomeFragment>(
             themeResId = R.style.AppTheme
         )
         onView(withId(R.id.homeFragmentSpinner)).check(matches(isDisplayed()))
@@ -52,7 +52,7 @@ class ObjectsUITest {
 
     @Test
     fun testHomeFragmentNextButtonExists() {
-        launchFragmentInContainer<CountriesFragment>(
+        launchFragmentInContainer<HomeFragment>(
             themeResId = R.style.AppTheme
         )
         onView(withId(R.id.homeFragmentNextButton)).check(matches(isDisplayed()))
@@ -60,7 +60,7 @@ class ObjectsUITest {
 
     @Test
     fun testHomeFragmentNextButtonIsClickable() {
-        launchFragmentInContainer<CountriesFragment>(
+        launchFragmentInContainer<HomeFragment>(
             themeResId = R.style.AppTheme
         )
         onView(withId(R.id.homeFragmentNextButton)).check(matches(isClickable()))
@@ -68,7 +68,7 @@ class ObjectsUITest {
 
     @Test
     fun testHomeFragmentNextButtonTextIsVisible() {
-        launchFragmentInContainer<CountriesFragment>(
+        launchFragmentInContainer<HomeFragment>(
             themeResId = R.style.AppTheme
         )
         onView(withId(R.id.homeFragmentNextButton)).check(matches(withText("Next")))

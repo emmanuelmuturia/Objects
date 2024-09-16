@@ -16,7 +16,7 @@ import cifor.icraf.objects.feature.ui.viewmodel.ObjectsViewModel
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class CountriesFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     private var _binding: FragmentCountriesBinding? = null
     private val binding get() = _binding!!

@@ -82,9 +82,9 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 ## Screenshots
 
-|                           Screenshot #1                           |                           Screenshot #2                           |                           Screenshot #3                           |
-|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|
-| ![Screenshot #1](assets/app_screenshots/objects_screenshot_1.png) | ![Screenshot #2](assets/app_screenshots/objects_screenshot_2.png) | ![Screenshot #3](assets/app_screenshots/objects_screenshot_3.png) |
+|                      Home screen                       |
+|:------------------------------------------------------:|
+| ![Home Screen](assets/app_screenshots/home_screen.png) |
 
 ### Demo
 
@@ -122,11 +122,7 @@ Objects was developed over time to test if the proposed JSON file was correctly 
 
 - [Retrofit](https://square.github.io/retrofit/) and [OkHTTP](https://square.github.io/okhttp/) were used to make and mock the REST API calls respectively...
 
-### 8. Safe Args
-
-- [Safe Args](https://developer.android.com/guide/navigation/use-graph/safe-args) was used to generate Classes which allowed for type-safe navigation in the Views context (pun intended)...
-
-### 9. JUnit, MockK, Kotlin Coroutines Test, and Espresso
+### 8. JUnit, MockK, Kotlin Coroutines Test, and Espresso
 
 - [JUnit](https://junit.org/junit4/) was used to run the Tests...
 - [MockK](https://mockk.io) was used to mock the dependencies used for Testing...
